@@ -4,6 +4,8 @@
   "description": "Munim — Voice-First AI Merchant Business Assistant (Paytm Build for India Hackathon)",
   "private": true,
   "scripts": {
+    "postinstall": "npm install --prefix frontend",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
     "start": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000",
     "backend": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload",
     "dev:frontend": "npm run dev --prefix frontend",
