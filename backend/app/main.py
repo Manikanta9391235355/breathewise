@@ -45,8 +45,8 @@ app.add_middleware(
 # Include Munim API Router
 app.include_router(munim_router, prefix="/api")
 
-# Serve frontend build if available and not on Vercel (where Vercel CDN serves static assets directly)
-if FRONTEND_DIST.exists() and not os.getenv("VERCEL"):
+# Serve frontend build if available (single origin production/deployment mode)
+if FRONTEND_DIST.exists():
     app.mount("/assets", StaticFiles(directory=str(FRONTEND_DIST / "assets")), name="assets")
 
     @app.get("/{full_path:path}")
