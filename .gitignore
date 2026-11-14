@@ -49,6 +49,7 @@ htmlcov/
 
 # databases & local caches
 *.db
+!munim.db
 *.db-journal
 *.sqlite
 *.sqlite3
@@ -89,3 +90,5 @@ next-env.d.ts
 # cloud deployment temp
 .vercel
 .netlify
+
+.vercel
