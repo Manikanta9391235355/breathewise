@@ -1,33 +1,16 @@
 {
-  "name": "sentinelz-ai",
+  "name": "munim-merchant-growth-ai",
   "version": "1.0.0",
-  "description": "SentinelZ AI — Privacy-First AI Security & Threat Detection Platform for IBM LinuxONE",
+  "description": "Munim — Voice-First AI Merchant Business Assistant (Paytm Build for India Hackathon)",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "backend": "python -m uvicorn backend.app.main:app --port 8000 --reload",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
+    "start": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000",
+    "backend": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "smoke-test": "python scripts/smoke_test.py",
     "test:backend": "python -m pytest backend/tests -v"
   },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.27.0",
-    "next": "16.2.12",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "recharts": "^3.10.1",
-    "tailwind-merge": "^3.6.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.12",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

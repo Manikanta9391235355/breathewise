@@ -1,0 +1,13 @@
+merchant_id,supplier_id,display_name,payment_terms_days
+M01,M01-V1,Demo supplier 1,14
+M01,M01-V2,Demo supplier 2,14
+M01,M01-V3,Demo supplier 3,14
+M01,M01-V4,Demo supplier 4,14
+M02,M02-V1,Demo supplier 1,14
+M02,M02-V2,Demo supplier 2,14
+M02,M02-V3,Demo supplier 3,14
+M02,M02-V4,Demo supplier 4,14
+M03,M03-V1,Demo supplier 1,14
+M03,M03-V2,Demo supplier 2,14
+M03,M03-V3,Demo supplier 3,14
+M03,M03-V4,Demo supplier 4,14

@@ -1,0 +1,18 @@
+{
+  "dataset_as_of": "2026-11-13",
+  "row_counts": {
+    "merchants": 3,
+    "customers": 360,
+    "suppliers": 12,
+    "products": 24,
+    "sales": 8296,
+    "sale_items": 13364,
+    "expenses": 45,
+    "supplier_bills": 39,
+    "settlements": 270
+  },
+  "M01_final_day_paid_orders": 25,
+  "M01_final_day_sales_paise": 685000,
+  "M01_opted_in_lapsed_regulars": 24,
+  "M01_overdue_settlement_paise": 58000
+}

@@ -1,28 +1,22 @@
+import os
+from pathlib import Path
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Request, status
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, JSONResponse
 from backend.app.config import settings
 from backend.app.database import engine, Base, SessionLocal
-import backend.app.models  # Ensures all models are registered
-from backend.app.services.seeder import seed_database
+from backend.app.services.seed import seed_database
+from backend.app.api.munim_routes import router as munim_router
 
-# Routers
-from backend.app.api.auth import router as auth_router
-from backend.app.api.events import router as events_router
-from backend.app.api.findings import router as findings_router
-from backend.app.api.privacy import router as privacy_router
-from backend.app.api.audit import router as audit_router
-from backend.app.api.users import router as users_router
-from backend.app.api.metrics import router as metrics_router
-from backend.app.api.health import router as health_router
-from backend.app.api.settings import router as settings_router
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+FRONTEND_DIST = BASE_DIR / "frontend" / "dist"
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Initialize database schema on startup
+    # Initialize database schema and seed if needed
     Base.metadata.create_all(bind=engine)
-    # Seed initial demo state if database is empty
     db = SessionLocal()
     try:
         seed_database(db, force=False)
@@ -33,66 +27,45 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
-    description="SentinelZ AI — Privacy-First AI Security & Threat Detection Platform for IBM LinuxONE",
+    description=settings.TAGLINE,
     docs_url="/api/docs",
     openapi_url="/api/openapi.json",
     lifespan=lifespan
 )
 
-# Request size limitation middleware (Reject payloads > 1MB)
-@app.middleware("http")
-async def limit_request_size(request: Request, call_next):
-    content_length = request.headers.get("content-length")
-    if content_length and int(content_length) > settings.MAX_REQUEST_SIZE_BYTES:
-        return JSONResponse(
-            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-            content={"detail": f"Payload exceeds maximum allowed limit of {settings.MAX_REQUEST_SIZE_BYTES} bytes."}
-        )
-    return await call_next(request)
-
-# Safe global exception handler to avoid leaking internal stack traces
-@app.exception_handler(Exception)
-async def generic_exception_handler(request: Request, exc: Exception):
-    import logging
-    logging.getLogger("sentinelz").error(f"Unhandled error processing {request.url.path}: {str(exc)}")
-    return JSONResponse(
-        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        content={"detail": "An internal server error occurred. Correlation logged for administrator review."}
-    )
-
-# CORS configuration
+# CORS Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.BACKEND_CORS_ORIGINS,
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Register API Routers
-app.include_router(auth_router, prefix=settings.API_V1_STR)
-app.include_router(events_router, prefix=settings.API_V1_STR)
-app.include_router(findings_router, prefix=settings.API_V1_STR)
-app.include_router(privacy_router, prefix=settings.API_V1_STR)
-app.include_router(audit_router, prefix=settings.API_V1_STR)
-app.include_router(users_router, prefix=settings.API_V1_STR)
-app.include_router(metrics_router, prefix=settings.API_V1_STR)
-app.include_router(health_router, prefix=settings.API_V1_STR)
-app.include_router(settings_router, prefix=settings.API_V1_STR)
+# Include Munim API Router
+app.include_router(munim_router, prefix="/api")
 
-@app.get("/")
-def root():
-    return {
-        "service": settings.PROJECT_NAME,
-        "tagline": settings.TAGLINE,
-        "theme": settings.THEME,
-        "version": settings.VERSION,
-        "target_platform": settings.TARGET_PLATFORM,
-        "status": "online",
-        "docs": "/api/docs",
-        "privacy_shield_default": "ACTIVE_ZERO_LEAKAGE"
-    }
+# Serve frontend build if available (single origin production/deployment mode)
+if FRONTEND_DIST.exists():
+    app.mount("/assets", StaticFiles(directory=str(FRONTEND_DIST / "assets")), name="assets")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("backend.app.main:app", host="0.0.0.0", port=8000, reload=True)
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        # Don't hijack /api routes
+        if full_path.startswith("api/"):
+            return JSONResponse(status_code=404, content={"detail": "API endpoint not found"})
+        target_file = FRONTEND_DIST / full_path
+        if target_file.exists() and target_file.is_file():
+            return FileResponse(target_file)
+        return FileResponse(FRONTEND_DIST / "index.html")
+else:
+    @app.get("/")
+    def root():
+        return {
+            "name": settings.PROJECT_NAME,
+            "tagline": settings.TAGLINE,
+            "version": settings.VERSION,
+            "api_health": "/api/health",
+            "api_docs": "/api/docs",
+            "frontend_dev_url": "http://localhost:5173"
+        }

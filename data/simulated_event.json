@@ -1,0 +1,9 @@
+{
+  "sale_id": "M01-LIVE-001",
+  "merchant_id": "M01",
+  "sold_at": "2026-11-13T21:15:00+05:30",
+  "amount_paise": 12500,
+  "channel": "upi",
+  "status": "paid",
+  "source": "simulated_live"
+}

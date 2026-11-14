@@ -1,181 +1,139 @@
-#!/usr/bin/env python3
 """
-SentinelZ AI — Automated End-to-End Smoke Test Script
-Verified for IBM LinuxONE (s390x) and x86_64 environments.
-
-Tests:
-1. Platform Health, Readiness, and LinuxONE status
-2. Authentication (PBKDF2-HMAC-SHA256)
-3. Role-Based Access Control (RBAC) server-side enforcement
-4. Privilege Escalation Prevention (Viewer blocked from administrative actions)
-5. Security Event Ingestion & Real-Time Threat Correlation
-6. Threat Finding Details & Investigation Status Workflow
-7. Privacy Shield PII Redaction & Overlap Protection
-8. Strict AI Boundary Enforcement (Zero Sensitive Data Forwarding)
-9. Append-Only Audit Trail (Zero Sensitive Leakage)
+Munim AI Assistant — Comprehensive End-to-End Smoke Test
+Paytm Build for India Hackathon | Track 1: Merchant Growth AI
 """
 
 import sys
+import io
 import json
-import os
+import requests
 
-try:
-    import httpx
-except ImportError:
-    print("[ERROR] httpx is required for smoke tests. Run `pip install httpx`.")
-    sys.exit(1)
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-BASE_URL = os.getenv("SENTINELZ_TEST_URL", sys.argv[1] if len(sys.argv) > 1 else "http://localhost:8000/api").rstrip('/')
-
-PASS_COUNT = 0
-FAIL_COUNT = 0
-
-def log_test(name: str, passed: bool, detail: str = ""):
-    global PASS_COUNT, FAIL_COUNT
-    if passed:
-        PASS_COUNT += 1
-        print(f"  [\033[92mPASS\033[0m] {name} {f'({detail})' if detail else ''}")
-    else:
-        FAIL_COUNT += 1
-        print(f"  [\033[91mFAIL\033[0m] {name} — {detail}")
+BASE_URL = "http://127.0.0.1:8000"
 
 def run_smoke_tests():
-    print("\n" + "=" * 70)
-    print(" SentinelZ AI — Automated Verification & Smoke Test Suite")
-    print(" Tagline: Intelligence Without Exposure")
-    print(" Theme: AI Secured: Innovation Without Exposure (IBM Z Datathon 2026)")
-    print("=" * 70 + "\n")
+    print("==========================================================")
+    print(" MUNIM AI ASSISTANT — SMOKE TEST SUITE")
+    print("==========================================================")
 
-    client = httpx.Client(timeout=10.0)
+    # 1. Health Endpoint
+    print("\n[1/7] Testing GET /api/health...")
+    r = requests.get(f"{BASE_URL}/api/health", timeout=5)
+    assert r.status_code == 200, f"Health check failed with {r.status_code}"
+    health = r.json()
+    print(f"  Status: {health['status']} | DB: {health['database']} | As of: {health['dataset_as_of']}")
+    print(f"  Merchants: {health['counts']['merchants']} | Sales: {health['counts']['sales']}")
+    print(f"  Sarvam AI Configured: {health['sarvam_ai']['configured']}")
 
-    # 1. Health Probe
-    try:
-        res = client.get(f"{BASE_URL}/health")
-        log_test("GET /api/health (Liveness Probe)", res.status_code == 200 and res.json().get("status") == "healthy")
-    except Exception as e:
-        log_test("GET /api/health (Liveness Probe)", False, f"Connection error: {str(e)}")
-        print("\n[ABORT] Could not reach SentinelZ backend. Ensure uvicorn is running on port 8000.")
-        sys.exit(1)
+    # 2. Merchants List
+    print("\n[2/7] Testing GET /api/merchants...")
+    r = requests.get(f"{BASE_URL}/api/merchants", timeout=5)
+    assert r.status_code == 200
+    merchants = r.json()
+    print(f"  Retrieved {len(merchants)} merchants: {[m['name'] for m in merchants]}")
+    assert any(m['merchant_id'] == 'M01' for m in merchants), "M01 not found!"
 
-    # 2. Readiness Probe
-    res = client.get(f"{BASE_URL}/readiness")
-    data = res.json()
-    log_test("GET /api/readiness (Readiness Probe)", res.status_code == 200 and data.get("ready") is True)
+    # 3. Dashboard Baseline (Ramesh Kirana - M01 on 2026-11-13)
+    print("\n[3/7] Testing GET /api/dashboard?merchant_id=M01...")
+    r = requests.get(f"{BASE_URL}/api/dashboard?merchant_id=M01&from=2026-11-13&to=2026-11-13", timeout=5)
+    assert r.status_code == 200
+    d = r.json()
+    sales = d['sales_summary']
+    settle = d['settlements']
+    winback = d['winback_opportunity']
 
-    # 3. LinuxONE Platform Status
-    res = client.get(f"{BASE_URL}/linuxone/status")
-    data = res.json()
-    log_test("GET /api/linuxone/status (Platform Alignment)", res.status_code == 200 and "LinuxONE" in data.get("platform_name", ""))
+    print(f"  Paid Orders: {sales['paid_order_count']} (expected: 25)")
+    print(f"  Paid Sales: {sales['paid_sales_formatted']} (expected: ₹6,850)")
+    print(f"  Overdue Settlement: {settle['overdue_formatted']} (expected: ₹580)")
+    print(f"  Lapsed Regulars: {winback['eligible_customers_count']} (expected: 24)")
 
-    # 4. Authentication — Admin & Analyst Logins
-    res_admin = client.post(f"{BASE_URL}/auth/login", json={"email": "admin@sentinelz.local", "password": "SentinelAdmin#2026"})
-    admin_token = res_admin.json().get("access_token")
-    log_test("POST /api/auth/login (Admin Credentials)", res_admin.status_code == 200 and bool(admin_token))
+    assert sales['paid_order_count'] == 25, f"Expected 25 orders, got {sales['paid_order_count']}"
+    assert sales['paid_sales_paise'] == 685000, f"Expected 685000 paise, got {sales['paid_sales_paise']}"
+    assert settle['overdue_paise'] == 58000, f"Expected 58000 overdue paise, got {settle['overdue_paise']}"
+    assert winback['eligible_customers_count'] == 24, f"Expected 24 lapsed regulars, got {winback['eligible_customers_count']}"
+    print("  --> Dashboard baseline matches expected_demo.json 100%!")
 
-    res_viewer = client.post(f"{BASE_URL}/auth/login", json={"email": "viewer@sentinelz.local", "password": "SentinelViewer#2026"})
-    viewer_token = res_viewer.json().get("access_token")
-    log_test("POST /api/auth/login (Viewer Credentials)", res_viewer.status_code == 200 and bool(viewer_token))
-
-    # 5. Auth Failure on Bad Password
-    res_bad = client.post(f"{BASE_URL}/auth/login", json={"email": "admin@sentinelz.local", "password": "WrongPassword!2026"})
-    log_test("POST /api/auth/login (Bad Password Rejected)", res_bad.status_code == 401)
-
-    # Headers
-    admin_hdr = {"Authorization": f"Bearer {admin_token}"}
-    viewer_hdr = {"Authorization": f"Bearer {viewer_token}"}
-
-    # 6. Dashboard Metrics
-    res_metrics = client.get(f"{BASE_URL}/metrics/dashboard", headers=viewer_hdr)
-    metrics_data = res_metrics.json()
-    log_test("GET /api/metrics/dashboard (Metrics Aggregation)", res_metrics.status_code == 200 and metrics_data.get("total_events", 0) > 0)
-
-    # 7. Server-Side RBAC Enforcement — Viewer blocked from Admin Endpoints
-    res_users_viewer = client.get(f"{BASE_URL}/users", headers=viewer_hdr)
-    log_test("RBAC Boundary: Viewer Blocked from /api/users", res_users_viewer.status_code == 403, "403 Forbidden verified")
-
-    res_users_admin = client.get(f"{BASE_URL}/users", headers=admin_hdr)
-    log_test("RBAC Boundary: Admin Allowed to /api/users", res_users_admin.status_code == 200 and len(res_users_admin.json()) >= 3)
-
-    # 8. Security Event Ingestion & Threat Detection
-    ingest_payload = {
-        "user_id": "u_smoke_test_intruder",
-        "user_role": "external",
-        "source_ip": "198.51.100.99",
-        "resource": "mainframes/z16-hsm/crypto-keys/master-aes256",
-        "requested_action": "READ",
-        "resource_classification": "RESTRICTED_HIGH_VALUE",
-        "access_decision": "DENY",
-        "auth_result": "N/A"
+    # 4. Signature Voice Question: “ఈ రోజు ఎంత అమ్మాం?”
+    print("\n[4/7] Testing POST /api/ask (Telugu signature query)...")
+    ask_payload = {
+        "merchant_id": "M01",
+        "locale": "te-IN",
+        "question": "ఈ రోజు ఎంత అమ్మాం?"
     }
-    res_ingest = client.post(f"{BASE_URL}/events/ingest", json=ingest_payload, headers=admin_hdr)
-    log_test("POST /api/events/ingest (Event Ingestion)", res_ingest.status_code == 200 and res_ingest.json().get("id", "").startswith("evt_"))
+    r = requests.post(f"{BASE_URL}/api/ask", json=ask_payload, timeout=10)
+    assert r.status_code == 200
+    ask_res = r.json()
+    print(f"  Intent: {ask_res['intent']}")
+    print(f"  Spoken Answer: {ask_res['answer_text']}")
+    print(f"  Audio Generated (base64 bytes): {len(ask_res['audio_base64']) if ask_res['audio_base64'] else 'None'}")
+    assert "25" in ask_res['answer_text'], "Expected 25 in spoken answer"
+    assert "6,850" in ask_res['answer_text'], "Expected ₹6,850 in spoken answer"
+    print("  --> Telugu spoken and displayed figures verified!")
 
-    # 9. Threat Findings Verification
-    res_findings = client.get(f"{BASE_URL}/findings", headers=admin_hdr)
-    findings = res_findings.json()
-    hvu_finding = next((f for f in findings if f["rule_id"] == "HIGH_VALUE_UNAUTHORIZED"), None)
-    log_test("GET /api/findings (High-Value Asset Rule Triggered)", hvu_finding is not None and hvu_finding["severity"] in ("CRITICAL", "HIGH"))
+    # 5. Win-Back Action Preview & Explicit Approval Flow
+    print("\n[5/7] Testing Win-Back Action Preview and Approval...")
+    r = requests.post(f"{BASE_URL}/api/actions/preview", json={"merchant_id": "M01", "action_type": "winback_offer"}, timeout=5)
+    assert r.status_code == 200
+    prev = r.json()
+    print(f"  Preview ID: {prev['id']}")
+    print(f"  Eligible Recipients: {prev['recipient_count']} customers")
+    print(f"  Max Exposure: {prev['max_discount_exposure']}")
+    assert prev['recipient_count'] == 24
+    assert prev['max_discount_exposure'] == "₹480"
 
-    # 10. Threat Finding Status Update & Audit Logging
-    if hvu_finding:
-        res_update = client.patch(
-            f"{BASE_URL}/findings/{hvu_finding['id']}/status",
-            json={"status": "INVESTIGATING", "resolution_notes": "Automated smoke test triage"},
-            headers=admin_hdr
-        )
-        log_test("PATCH /api/findings/{id}/status (Status Disposition)", res_update.status_code == 200 and res_update.json().get("status") == "INVESTIGATING")
+    # Approve
+    r = requests.post(f"{BASE_URL}/api/actions/{prev['id']}/approve", json={"merchant_id": "M01"}, timeout=5)
+    assert r.status_code == 200
+    appr = r.json()
+    print(f"  Approval Status: {appr['status']}")
+    print(f"  Simulated Outbox Dispatch ID: {appr['outbox_receipt']['dispatch_id']}")
+    print(f"  Delivered: {appr['outbox_receipt']['recipients_delivered']} recipients")
+    assert appr['outbox_receipt']['recipients_delivered'] == 24
 
-    # 11. Privacy Shield — PII Redaction
-    sample_pii = "Contact alex@example.com, phone +1 (555) 234-5678, account IBM-ACCT-7890-1234 on IP 10.0.0.1"
-    res_sanitize = client.post(f"{BASE_URL}/privacy/sanitize", json={"text": sample_pii}, headers=admin_hdr)
-    san_data = res_sanitize.json()
-    sanitized_text = san_data.get("sanitized_text", "")
-    all_redacted = (
-        "[EMAIL_REDACTED]" in sanitized_text and
-        "[PHONE_REDACTED]" in sanitized_text and
-        "[MAINFRAME_ACCT_REDACTED]" in sanitized_text and
-        "[IP_REDACTED]" in sanitized_text and
-        "alex@example.com" not in sanitized_text and
-        "555" not in sanitized_text
-    )
-    log_test("POST /api/privacy/sanitize (Multi-Span PII Redaction)", res_sanitize.status_code == 200 and all_redacted)
+    # Idempotent re-approval
+    r2 = requests.post(f"{BASE_URL}/api/actions/{prev['id']}/approve", json={"merchant_id": "M01"}, timeout=5)
+    assert r2.status_code == 200
+    assert r2.json()['status'] == 'already_approved'
+    print("  --> Atomic idempotent approval verified!")
 
-    # 12. Privacy Shield — Strict AI Boundary Enforcement
-    res_ai = client.post(
-        f"{BASE_URL}/privacy/analyze-ai",
-        json={"text": "Review transaction for alex@example.com with card 4532-1234-5678-9010", "analysis_intent": "THREAT_SUMMARIZATION"},
-        headers=admin_hdr
-    )
-    ai_data = res_ai.json()
-    zero_leakage = (
-        ai_data.get("unredacted_data_exposed") is False and
-        ai_data.get("sanitization_summary", {}).get("ai_boundary_secured") is True and
-        "alex@example.com" not in ai_data.get("sanitization_summary", {}).get("sanitized_text", "")
-    )
-    log_test("POST /api/privacy/analyze-ai (Zero Exposure AI Boundary)", res_ai.status_code == 200 and zero_leakage)
+    # 6. Live Payment Simulation & Idempotency
+    print("\n[6/7] Testing Live Payment Simulation (₹125 UPI)...")
+    with open("data/simulated_event.json") as f:
+        event = json.load(f)
 
-    # 13. Audit Trail Verification & Zero Credentials Stored
-    res_audit = client.get(f"{BASE_URL}/audit", headers=admin_hdr)
-    audit_records = res_audit.json()
-    latest_audit = audit_records[0] if audit_records else None
-    no_creds_in_audit = True
-    for r in audit_records[:5]:
-        meta_str = json.dumps(r.get("context_metadata", {})).lower()
-        if "sentineladmin#2026" in meta_str or "sentinelviewer#2026" in meta_str:
-            no_creds_in_audit = False
-            break
-    log_test("GET /api/audit (Immutable Audit Trail & Zero Credential Leakage)", bool(latest_audit) and no_creds_in_audit)
+    r = requests.post(f"{BASE_URL}/api/demo/events", json=event, timeout=5)
+    assert r.status_code == 200
+    d_after = requests.get(f"{BASE_URL}/api/dashboard?merchant_id=M01", timeout=5).json()
+    print(f"  After Live Event: Orders = {d_after['sales_summary']['paid_order_count']} (expected: 26)")
+    print(f"  After Live Event: Sales = {d_after['sales_summary']['paid_sales_formatted']} (expected: ₹6,975)")
+    assert d_after['sales_summary']['paid_order_count'] == 26
+    assert d_after['sales_summary']['paid_sales_paise'] == 697500
 
-    print("\n" + "-" * 70)
-    print(f" Smoke Test Summary: {PASS_COUNT} Passed, {FAIL_COUNT} Failed")
-    print("-" * 70)
+    # Repeat submission (must remain idempotent)
+    r_dup = requests.post(f"{BASE_URL}/api/demo/events", json=event, timeout=5)
+    assert r_dup.status_code == 200
+    assert r_dup.json()['status'] == 'already_processed'
+    d_dup = requests.get(f"{BASE_URL}/api/dashboard?merchant_id=M01", timeout=5).json()
+    print(f"  After Duplicate Event: Orders = {d_dup['sales_summary']['paid_order_count']} | Sales = {d_dup['sales_summary']['paid_sales_formatted']}")
+    assert d_dup['sales_summary']['paid_order_count'] == 26
+    assert d_dup['sales_summary']['paid_sales_paise'] == 697500
+    print("  --> Live payment simulation & idempotency verified!")
 
-    if FAIL_COUNT > 0:
-        print("\033[91m[WARNING] Some smoke tests failed. Inspect output above.\033[0m\n")
-        sys.exit(1)
-    else:
-        print("\033[92m[SUCCESS] All SentinelZ AI security controls verified successfully!\033[0m\n")
-        sys.exit(0)
+    # 7. Demo Reset for Rehearsals
+    print("\n[7/7] Testing Demo Reset (Rehearsal Safety)...")
+    r_reset = requests.post(f"{BASE_URL}/api/demo/reset", timeout=10)
+    assert r_reset.status_code == 200
+    d_reset = requests.get(f"{BASE_URL}/api/dashboard?merchant_id=M01", timeout=5).json()
+    print(f"  After Reset: Orders = {d_reset['sales_summary']['paid_order_count']} (expected: 25)")
+    print(f"  After Reset: Sales = {d_reset['sales_summary']['paid_sales_formatted']} (expected: ₹6,850)")
+    assert d_reset['sales_summary']['paid_order_count'] == 25
+    assert d_reset['sales_summary']['paid_sales_paise'] == 685000
+    print("  --> Rehearsal reset verified back to baseline!")
+
+    print("\n==========================================================")
+    print(" ALL 7 SMOKE TESTS PASSED PERFECTLY!")
+    print("==========================================================")
 
 if __name__ == "__main__":
     run_smoke_tests()
