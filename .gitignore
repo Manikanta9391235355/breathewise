@@ -76,7 +76,6 @@ cloudbuild.yaml
 firebase.json
 .firebaserc
 .gcloudignore
-netlify.toml
 next.config.js
 
 # system & IDE
