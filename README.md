@@ -4,6 +4,14 @@
 
 *Technical Assignment Submission for the **Junior AI Engineer – Applied AI** position at **DarGlobal**.*
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Manikanta9391235355/estateiq-ai)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+[![React 18](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker)](https://www.docker.com)
+[![Render](https://img.shields.io/badge/Render-Deployment%20Ready-46E3B7?style=for-the-badge&logo=render)](https://render.com)
+
+**Official GitHub Repository:** [https://github.com/Manikanta9391235355/estateiq-ai](https://github.com/Manikanta9391235355/estateiq-ai)
+
 ---
 
 ## 1. Executive Summary & Overview
