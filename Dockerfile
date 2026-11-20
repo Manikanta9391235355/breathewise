@@ -1,42 +1,55 @@
-# ==============================================================================
-# SentinelZ AI — Container Deployment Dockerfile
-# Compatible with IBM LinuxONE (s390x) and x86_64
-# IBM Z Datathon 2026: AI Secured — Innovation Without Exposure
-# ==============================================================================
-FROM python:3.11-slim
+# ============================================================
+# Stage 1: Build React Production Frontend
+# ============================================================
+FROM node:20-alpine AS frontend-builder
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1 \
-    SENTINELZ_PORT=8000 \
-    SENTINELZ_HOST=0.0.0.0
+WORKDIR /app/frontend
+
+COPY frontend/package*.json ./
+RUN npm ci --prefer-offline || npm install
+
+COPY frontend/ ./
+RUN npm run build
+
+# ============================================================
+# Stage 2: Python 3.11 FastAPI Backend & RAG Runtime
+# ============================================================
+FROM python:3.11-slim AS runner
+
+# Install libgomp for FAISS and curl for healthcheck
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Install build dependencies for architecture neutrality
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# Install Python dependencies
+COPY backend/requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Python requirements
-COPY backend/requirements.txt ./backend/requirements.txt
-RUN pip install --no-cache-dir -r backend/requirements.txt
+# Copy backend code
+COPY backend/ ./backend/
 
-# Copy backend source code
-COPY backend ./backend
-COPY scripts ./scripts
+# Copy pre-computed data and FAISS index (instant startup without scraping)
+COPY data/ ./data/
+COPY scripts/ ./scripts/
 
-# Create non-root user for least privilege security
-RUN useradd -u 1001 -m -s /bin/bash sentinelz && \
-    chown -R sentinelz:sentinelz /app
+# Copy compiled frontend from Stage 1 into frontend/dist
+COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
 
-USER sentinelz
+# Environment variables (default to 10000 for Render, overridden by $PORT)
+ENV PORT=10000 \
+    HOST=0.0.0.0 \
+    PYTHONUNBUFFERED=1 \
+    ENVIRONMENT=production \
+    DATA_DIR=data
 
-# Health check probe
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD curl -f http://localhost:8000/api/health || exit 1
+EXPOSE 10000
 
-EXPOSE 8000
+# Health check endpoint verification
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+    CMD curl -f http://localhost:${PORT:-10000}/api/health || exit 1
 
-# Start command
-CMD ["python", "-m", "uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Start Uvicorn ASGI server binding to 0.0.0.0 respecting Render PORT
+CMD ["sh", "-c", "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-10000}"]

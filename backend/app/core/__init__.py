@@ -1,1 +1,1 @@
-# Core security and RBAC package
+"""Core package for EstateIQ AI."""

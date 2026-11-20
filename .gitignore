@@ -1,94 +1,43 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-node_modules/
-**/node_modules/
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# build and dist
-dist/
-**/dist/
-/build
-.next/
-out/
-
-# Android build outputs
-frontend/android/.gradle/
-frontend/android/build/
-frontend/android/app/build/
-frontend/android/app/src/main/assets/public/
-frontend/android/capacitor-cordova-android-plugins/
-
-# Python & testing
+# Byte-compiled / optimized / DLL files
 __pycache__/
-**/__pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# Virtual Environments
 .venv/
 venv/
 env/
-.pytest_cache/
-.coverage
-htmlcov/
+ENV/
 
-# security & secrets
-*.pem
-*.key
-*.cert
-*.crt
+# Node & Frontend dependencies/build
+node_modules/
+frontend/node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Secrets & Environment configurations
 .env
 .env*.local
 !.env.example
 
-# databases & local caches
-*.db
-!munim.db
-*.db-journal
-*.sqlite
-*.sqlite3
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
-# temporary files & non-project assets
-deploy_dist/
-scratch/
-contant.docx
-*.zip
-*.tar.gz
+# Logs & Temporary files
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+*.tmp
+scratch/
 
-# legacy non-SentinelZ files
-backend/storage/
-public/marseli-*
-public/exact-marseli-*
-public/pulse.html
-prisma/
-deploy-cloud-run.ps1
-cloudbuild.yaml
-firebase.json
-.firebaserc
-.gcloudignore
-next.config.js
-
-# system & IDE
+# Operating System & IDE metadata
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
-*.tsbuildinfo
-next-env.d.ts
-
-# cloud deployment temp
-.vercel
-.netlify
-
-.vercel
+*.swp
+*.swo

@@ -1,0 +1,4673 @@
+{
+  "source": "DarGlobal",
+  "base_url": "https://darglobal.co.uk",
+  "scraped_at": "2026-11-18T10:31:45.281526+00:00",
+  "attempted_urls": [
+    "https://darglobal.co.uk/robots.txt",
+    "https://darglobal.co.uk/sitemap_index.xml",
+    "https://darglobal.co.uk/_next/data/iiWOEpmF0qqZaVDZyBIKc/en/the-astera.json",
+    "https://darglobal.co.uk/_next/data/iiWOEpmF0qqZaVDZyBIKc/en/tierra-viva.json",
+    "https://darglobal.co.uk/_next/data/iiWOEpmF0qqZaVDZyBIKc/en/dg1.json",
+    "https://darglobal.co.uk/_next/data/iiWOEpmF0qqZaVDZyBIKc/en/les-vagues.json",
+    "https://darglobal.co.uk/_next/data/iiWOEpmF0qqZaVDZyBIKc/en/about.json"
+  ],
+  "failed_urls": [],
+  "raw_documents": [
+    {
+      "type": "catalog_metadata",
+      "project_count": 42,
+      "data": {
+        "CountryList": [
+          {
+            "code": "AF",
+            "name": "Afghanistan",
+            "dial_code": "+93"
+          },
+          {
+            "code": "AX",
+            "name": "Aland Islands",
+            "dial_code": "+358"
+          },
+          {
+            "code": "AL",
+            "name": "Albania",
+            "dial_code": "+355"
+          },
+          {
+            "code": "DZ",
+            "name": "Algeria",
+            "dial_code": "+213"
+          },
+          {
+            "code": "AS",
+            "name": "AmericanSamoa",
+            "dial_code": "+1684"
+          },
+          {
+            "code": "AD",
+            "name": "Andorra",
+            "dial_code": "+376"
+          },
+          {
+            "code": "AO",
+            "name": "Angola",
+            "dial_code": "+244"
+          },
+          {
+            "code": "AI",
+            "name": "Anguilla",
+            "dial_code": "+1264"
+          },
+          {
+            "code": "AQ",
+            "name": "Antarctica",
+            "dial_code": "+672"
+          },
+          {
+            "code": "AG",
+            "name": "Antigua and Barbuda",
+            "dial_code": "+1268"
+          },
+          {
+            "code": "AR",
+            "name": "Argentina",
+            "dial_code": "+54"
+          },
+          {
+            "code": "AM",
+            "name": "Armenia",
+            "dial_code": "+374"
+          },
+          {
+            "code": "AW",
+            "name": "Aruba",
+            "dial_code": "+297"
+          },
+          {
+            "code": "AU",
+            "name": "Australia",
+            "dial_code": "+61"
+          },
+          {
+            "code": "AT",
+            "name": "Austria",
+            "dial_code": "+43"
+          },
+          {
+            "code": "AZ",
+            "name": "Azerbaijan",
+            "dial_code": "+994"
+          },
+          {
+            "code": "BS",
+            "name": "Bahamas",
+            "dial_code": "+1242"
+          },
+          {
+            "code": "BH",
+            "name": "Bahrain",
+            "dial_code": "+973"
+          },
+          {
+            "code": "BD",
+            "name": "Bangladesh",
+            "dial_code": "+880"
+          },
+          {
+            "code": "BB",
+            "name": "Barbados",
+            "dial_code": "+1246"
+          },
+          {
+            "code": "BY",
+            "name": "Belarus",
+            "dial_code": "+375"
+          },
+          {
+            "code": "BE",
+            "name": "Belgium",
+            "dial_code": "+32"
+          },
+          {
+            "code": "BZ",
+            "name": "Belize",
+            "dial_code": "+501"
+          },
+          {
+            "code": "BJ",
+            "name": "Benin",
+            "dial_code": "+229"
+          },
+          {
+            "code": "BM",
+            "name": "Bermuda",
+            "dial_code": "+1441"
+          },
+          {
+            "code": "BT",
+            "name": "Bhutan",
+            "dial_code": "+975"
+          },
+          {
+            "code": "BO",
+            "name": "Bolivia",
+            "dial_code": "+591"
+          },
+          {
+            "code": "BQ",
+            "name": "Bonaire",
+            "dial_code": "+599"
+          },
+          {
+            "code": "BA",
+            "name": "Bosnia and Herzegovina",
+            "dial_code": "+387"
+          },
+          {
+            "code": "BW",
+            "name": "Botswana",
+            "dial_code": "+267"
+          },
+          {
+            "code": "BR",
+            "name": "Brazil",
+            "dial_code": "+55"
+          },
+          {
+            "code": "IO",
+            "name": "British Indian Ocean Territory",
+            "dial_code": "+246"
+          },
+          {
+            "code": "BN",
+            "name": "Brunei",
+            "dial_code": "+673"
+          },
+          {
+            "code": "BG",
+            "name": "Bulgaria",
+            "dial_code": "+359"
+          },
+          {
+            "code": "BF",
+            "name": "Burkina Faso",
+            "dial_code": "+226"
+          },
+          {
+            "code": "BI",
+            "name": "Burundi",
+            "dial_code": "+257"
+          },
+          {
+            "code": "CV",
+            "name": "Cabo Verde",
+            "dial_code": "+238"
+          },
+          {
+            "code": "KH",
+            "name": "Cambodia",
+            "dial_code": "+855"
+          },
+          {
+            "code": "CM",
+            "name": "Cameroon",
+            "dial_code": "+237"
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "dial_code": "+1"
+          },
+          {
+            "code": "KY",
+            "name": "Cayman Islands",
+            "dial_code": "+1345"
+          },
+          {
+            "code": "CF",
+            "name": "Central African Republic",
+            "dial_code": "+236"
+          },
+          {
+            "code": "TD",
+            "name": "Chad",
+            "dial_code": "+235"
+          },
+          {
+            "code": "CL",
+            "name": "Chile",
+            "dial_code": "+56"
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "dial_code": "+86"
+          },
+          {
+            "code": "CX",
+            "name": "Christmas Island",
+            "dial_code": "+61"
+          },
+          {
+            "code": "CC",
+            "name": "Cocos",
+            "dial_code": "+61"
+          },
+          {
+            "code": "CO",
+            "name": "Colombia",
+            "dial_code": "+57"
+          },
+          {
+            "code": "KM",
+            "name": "Comoros",
+            "dial_code": "+269"
+          },
+          {
+            "code": "CG",
+            "name": "Congo",
+            "dial_code": "+242"
+          },
+          {
+            "code": "CD",
+            "name": "DR Congo",
+            "dial_code": "+243"
+          },
+          {
+            "code": "CK",
+            "name": "Cook Islands",
+            "dial_code": "+682"
+          },
+          {
+            "code": "CR",
+            "name": "Costa Rica",
+            "dial_code": "+506"
+          },
+          {
+            "code": "CI",
+            "name": "Côte d'Ivoire",
+            "dial_code": "+225"
+          },
+          {
+            "code": "HR",
+            "name": "Croatia",
+            "dial_code": "+385"
+          },
+          {
+            "code": "CU",
+            "name": "Cuba",
+            "dial_code": "+53"
+          },
+          {
+            "code": "CW",
+            "name": "Curaçao",
+            "dial_code": "+599"
+          },
+          {
+            "code": "CY",
+            "name": "Cyprus",
+            "dial_code": "+357"
+          },
+          {
+            "code": "CZ",
+            "name": "Czech Republic (Czechia)",
+            "dial_code": "+420"
+          },
+          {
+            "code": "DK",
+            "name": "Denmark",
+            "dial_code": "+45"
+          },
+          {
+            "code": "DJ",
+            "name": "Djibouti",
+            "dial_code": "+253"
+          },
+          {
+            "code": "DM",
+            "name": "Dominica",
+            "dial_code": "+1767"
+          },
+          {
+            "code": "DO",
+            "name": "Dominican Republic",
+            "dial_code": "+849"
+          },
+          {
+            "code": "EC",
+            "name": "Ecuador",
+            "dial_code": "+593"
+          },
+          {
+            "code": "EG",
+            "name": "Egypt",
+            "dial_code": "+20"
+          },
+          {
+            "code": "SV",
+            "name": "El Salvador",
+            "dial_code": "+503"
+          },
+          {
+            "code": "GQ",
+            "name": "Equatorial Guinea",
+            "dial_code": "+240"
+          },
+          {
+            "code": "ER",
+            "name": "Eritrea",
+            "dial_code": "+291"
+          },
+          {
+            "code": "EE",
+            "name": "Estonia",
+            "dial_code": "+372"
+          },
+          {
+            "code": "SZ",
+            "name": "Eswatini",
+            "dial_code": "+268"
+          },
+          {
+            "code": "ET",
+            "name": "Ethiopia",
+            "dial_code": "+251"
+          },
+          {
+            "code": "FK",
+            "name": "Falkland Islands",
+            "dial_code": "+500"
+          },
+          {
+            "code": "FO",
+            "name": "Faroe Islands",
+            "dial_code": "+298"
+          },
+          {
+            "code": "FJ",
+            "name": "Fiji",
+            "dial_code": "+679"
+          },
+          {
+            "code": "FI",
+            "name": "Finland",
+            "dial_code": "+358"
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "dial_code": "+33"
+          },
+          {
+            "code": "GF",
+            "name": "French Guiana",
+            "dial_code": "+594"
+          },
+          {
+            "code": "PF",
+            "name": "French Polynesia",
+            "dial_code": "+689"
+          },
+          {
+            "code": "GA",
+            "name": "Gabon",
+            "dial_code": "+241"
+          },
+          {
+            "code": "GM",
+            "name": "Gambia",
+            "dial_code": "+220"
+          },
+          {
+            "code": "GE",
+            "name": "Georgia",
+            "dial_code": "+995"
+          },
+          {
+            "code": "DE",
+            "name": "Germany",
+            "dial_code": "+49"
+          },
+          {
+            "code": "GH",
+            "name": "Ghana",
+            "dial_code": "+233"
+          },
+          {
+            "code": "GI",
+            "name": "Gibraltar",
+            "dial_code": "+350"
+          },
+          {
+            "code": "GR",
+            "name": "Greece",
+            "dial_code": "+30"
+          },
+          {
+            "code": "GL",
+            "name": "Greenland",
+            "dial_code": "+299"
+          },
+          {
+            "code": "GD",
+            "name": "Grenada",
+            "dial_code": "+1473"
+          },
+          {
+            "code": "GP",
+            "name": "Guadeloupe",
+            "dial_code": "+590"
+          },
+          {
+            "code": "GU",
+            "name": "Guam",
+            "dial_code": "+1671"
+          },
+          {
+            "code": "GT",
+            "name": "Guatemala",
+            "dial_code": "+502"
+          },
+          {
+            "code": "GG",
+            "name": "Guernsey",
+            "dial_code": "+44"
+          },
+          {
+            "code": "GN",
+            "name": "Guinea",
+            "dial_code": "+224"
+          },
+          {
+            "code": "GW",
+            "name": "Guinea-Bissau",
+            "dial_code": "+245"
+          },
+          {
+            "code": "GY",
+            "name": "Guyana",
+            "dial_code": "+592"
+          },
+          {
+            "code": "HT",
+            "name": "Haiti",
+            "dial_code": "+509"
+          },
+          {
+            "code": "VA",
+            "name": "Holy See (Vatican City)",
+            "dial_code": "+379"
+          },
+          {
+            "code": "HN",
+            "name": "Honduras",
+            "dial_code": "+504"
+          },
+          {
+            "code": "HK",
+            "name": "Hong Kong",
+            "dial_code": "+852"
+          },
+          {
+            "code": "HU",
+            "name": "Hungary",
+            "dial_code": "+36"
+          },
+          {
+            "code": "IS",
+            "name": "Iceland",
+            "dial_code": "+354"
+          },
+          {
+            "code": "IN",
+            "name": "India",
+            "dial_code": "+91"
+          },
+          {
+            "code": "ID",
+            "name": "Indonesia",
+            "dial_code": "+62"
+          },
+          {
+            "code": "IR",
+            "name": "Iran",
+            "dial_code": "+98"
+          },
+          {
+            "code": "IQ",
+            "name": "Iraq",
+            "dial_code": "+964"
+          },
+          {
+            "code": "IE",
+            "name": "Ireland",
+            "dial_code": "+353"
+          },
+          {
+            "code": "IM",
+            "name": "Isle of Man",
+            "dial_code": "+44"
+          },
+          {
+            "code": "IL",
+            "name": "Israel",
+            "dial_code": "+972"
+          },
+          {
+            "code": "IT",
+            "name": "Italy",
+            "dial_code": "+39"
+          },
+          {
+            "code": "JM",
+            "name": "Jamaica",
+            "dial_code": "+1876"
+          },
+          {
+            "code": "JP",
+            "name": "Japan",
+            "dial_code": "+81"
+          },
+          {
+            "code": "JE",
+            "name": "Jersey",
+            "dial_code": "+44"
+          },
+          {
+            "code": "JO",
+            "name": "Jordan",
+            "dial_code": "+962"
+          },
+          {
+            "code": "KZ",
+            "name": "Kazakhstan",
+            "dial_code": "+7"
+          },
+          {
+            "code": "KE",
+            "name": "Kenya",
+            "dial_code": "+254"
+          },
+          {
+            "code": "KI",
+            "name": "Kiribati",
+            "dial_code": "+686"
+          },
+          {
+            "code": "KP",
+            "name": "North Korea",
+            "dial_code": "+850"
+          },
+          {
+            "code": "KR",
+            "name": "South Korea",
+            "dial_code": "+82"
+          },
+          {
+            "code": "KW",
+            "name": "Kuwait",
+            "dial_code": "+965"
+          },
+          {
+            "code": "KG",
+            "name": "Kyrgyzstan",
+            "dial_code": "+996"
+          },
+          {
+            "code": "LA",
+            "name": "Laos",
+            "dial_code": "+856"
+          },
+          {
+            "code": "LV",
+            "name": "Latvia",
+            "dial_code": "+371"
+          },
+          {
+            "code": "LB",
+            "name": "Lebanon",
+            "dial_code": "+961"
+          },
+          {
+            "code": "LS",
+            "name": "Lesotho",
+            "dial_code": "+266"
+          },
+          {
+            "code": "LR",
+            "name": "Liberia",
+            "dial_code": "+231"
+          },
+          {
+            "code": "LY",
+            "name": "Libyan Arab Jamahiriya",
+            "dial_code": "+218"
+          },
+          {
+            "code": "LI",
+            "name": "Liechtenstein",
+            "dial_code": "+423"
+          },
+          {
+            "code": "LT",
+            "name": "Lithuania",
+            "dial_code": "+370"
+          },
+          {
+            "code": "LU",
+            "name": "Luxembourg",
+            "dial_code": "+352"
+          },
+          {
+            "code": "MO",
+            "name": "Macau",
+            "dial_code": "+853"
+          },
+          {
+            "code": "MG",
+            "name": "Madagascar",
+            "dial_code": "+261"
+          },
+          {
+            "code": "MW",
+            "name": "Malawi",
+            "dial_code": "+265"
+          },
+          {
+            "code": "MY",
+            "name": "Malaysia",
+            "dial_code": "+60"
+          },
+          {
+            "code": "MV",
+            "name": "Maldives",
+            "dial_code": "+960"
+          },
+          {
+            "code": "ML",
+            "name": "Mali",
+            "dial_code": "+223"
+          },
+          {
+            "code": "MT",
+            "name": "Malta",
+            "dial_code": "+356"
+          },
+          {
+            "code": "MH",
+            "name": "Marshall Islands",
+            "dial_code": "+692"
+          },
+          {
+            "code": "MQ",
+            "name": "Martinique",
+            "dial_code": "+596"
+          },
+          {
+            "code": "MR",
+            "name": "Mauritania",
+            "dial_code": "+222"
+          },
+          {
+            "code": "MU",
+            "name": "Mauritius",
+            "dial_code": "+230"
+          },
+          {
+            "code": "YT",
+            "name": "Mayotte",
+            "dial_code": "+262"
+          },
+          {
+            "code": "MX",
+            "name": "Mexico",
+            "dial_code": "+52"
+          },
+          {
+            "code": "FM",
+            "name": "Micronesia",
+            "dial_code": "+691"
+          },
+          {
+            "code": "MD",
+            "name": "Moldova",
+            "dial_code": "+373"
+          },
+          {
+            "code": "MC",
+            "name": "Monaco",
+            "dial_code": "+377"
+          },
+          {
+            "code": "MN",
+            "name": "Mongolia",
+            "dial_code": "+976"
+          },
+          {
+            "code": "ME",
+            "name": "Montenegro",
+            "dial_code": "+382"
+          },
+          {
+            "code": "MS",
+            "name": "Montserrat",
+            "dial_code": "+1664"
+          },
+          {
+            "code": "MA",
+            "name": "Morocco",
+            "dial_code": "+212"
+          },
+          {
+            "code": "MZ",
+            "name": "Mozambique",
+            "dial_code": "+258"
+          },
+          {
+            "code": "MM",
+            "name": "Myanmar",
+            "dial_code": "+95"
+          },
+          {
+            "code": "NA",
+            "name": "Namibia",
+            "dial_code": "+264"
+          },
+          {
+            "code": "NR",
+            "name": "Nauru",
+            "dial_code": "+674"
+          },
+          {
+            "code": "NP",
+            "name": "Nepal",
+            "dial_code": "+977"
+          },
+          {
+            "code": "NL",
+            "name": "Netherlands",
+            "dial_code": "+31"
+          },
+          {
+            "code": "NC",
+            "name": "New Caledonia",
+            "dial_code": "+687"
+          },
+          {
+            "code": "NZ",
+            "name": "New Zealand",
+            "dial_code": "+64"
+          },
+          {
+            "code": "NI",
+            "name": "Nicaragua",
+            "dial_code": "+505"
+          },
+          {
+            "code": "NE",
+            "name": "Niger",
+            "dial_code": "+227"
+          },
+          {
+            "code": "NG",
+            "name": "Nigeria",
+            "dial_code": "+234"
+          },
+          {
+            "code": "NU",
+            "name": "Niue",
+            "dial_code": "+683"
+          },
+          {
+            "code": "NF",
+            "name": "Norfolk Island",
+            "dial_code": "+672"
+          },
+          {
+            "code": "MK",
+            "name": "North Macedonia",
+            "dial_code": "+389"
+          },
+          {
+            "code": "MP",
+            "name": "Northern Mariana Islands",
+            "dial_code": "+1670"
+          },
+          {
+            "code": "NO",
+            "name": "Norway",
+            "dial_code": "+47"
+          },
+          {
+            "code": "OM",
+            "name": "Oman",
+            "dial_code": "+968"
+          },
+          {
+            "code": "PK",
+            "name": "Pakistan",
+            "dial_code": "+92"
+          },
+          {
+            "code": "PW",
+            "name": "Palau",
+            "dial_code": "+680"
+          },
+          {
+            "code": "PS",
+            "name": "State of Palestine",
+            "dial_code": "+970"
+          },
+          {
+            "code": "PA",
+            "name": "Panama",
+            "dial_code": "+507"
+          },
+          {
+            "code": "PG",
+            "name": "Papua New Guinea",
+            "dial_code": "+675"
+          },
+          {
+            "code": "PY",
+            "name": "Paraguay",
+            "dial_code": "+595"
+          },
+          {
+            "code": "PE",
+            "name": "Peru",
+            "dial_code": "+51"
+          },
+          {
+            "code": "PH",
+            "name": "Philippines",
+            "dial_code": "+63"
+          },
+          {
+            "code": "PN",
+            "name": "Pitcairn",
+            "dial_code": "+64"
+          },
+          {
+            "code": "PL",
+            "name": "Poland",
+            "dial_code": "+48"
+          },
+          {
+            "code": "PT",
+            "name": "Portugal",
+            "dial_code": "+351"
+          },
+          {
+            "code": "PR",
+            "name": "Puerto Rico",
+            "dial_code": "+1"
+          },
+          {
+            "code": "QA",
+            "name": "Qatar",
+            "dial_code": "+974"
+          },
+          {
+            "code": "RE",
+            "name": "Réunion",
+            "dial_code": "+262"
+          },
+          {
+            "code": "RO",
+            "name": "Romania",
+            "dial_code": "+40"
+          },
+          {
+            "code": "RU",
+            "name": "Russia",
+            "dial_code": "+7"
+          },
+          {
+            "code": "RW",
+            "name": "Rwanda",
+            "dial_code": "+250"
+          },
+          {
+            "code": "BL",
+            "name": "Saint Barthelemy",
+            "dial_code": "+590"
+          },
+          {
+            "code": "SH",
+            "name": "Saint Helena",
+            "dial_code": "+290"
+          },
+          {
+            "code": "KN",
+            "name": "Saint Kitts & Nevis",
+            "dial_code": "+1869"
+          },
+          {
+            "code": "LC",
+            "name": "Saint Lucia",
+            "dial_code": "+1758"
+          },
+          {
+            "code": "MF",
+            "name": "Saint Martin",
+            "dial_code": "+590"
+          },
+          {
+            "code": "PM",
+            "name": "Saint Pierre and Miquelon",
+            "dial_code": "+508"
+          },
+          {
+            "code": "VC",
+            "name": "Saint Vincent and the Grenadines",
+            "dial_code": "+1784"
+          },
+          {
+            "code": "WS",
+            "name": "Samoa",
+            "dial_code": "+685"
+          },
+          {
+            "code": "SM",
+            "name": "San Marino",
+            "dial_code": "+378"
+          },
+          {
+            "code": "ST",
+            "name": "Sao Tome and Principe",
+            "dial_code": "+239"
+          },
+          {
+            "code": "SA",
+            "name": "Saudi Arabia",
+            "dial_code": "+966"
+          },
+          {
+            "code": "SN",
+            "name": "Senegal",
+            "dial_code": "+221"
+          },
+          {
+            "code": "RS",
+            "name": "Serbia",
+            "dial_code": "+381"
+          },
+          {
+            "code": "SC",
+            "name": "Seychelles",
+            "dial_code": "+248"
+          },
+          {
+            "code": "SL",
+            "name": "Sierra Leone",
+            "dial_code": "+232"
+          },
+          {
+            "code": "SG",
+            "name": "Singapore",
+            "dial_code": "+65"
+          },
+          {
+            "code": "SX",
+            "name": "Sint Maarten",
+            "dial_code": "+1721"
+          },
+          {
+            "code": "SK",
+            "name": "Slovakia",
+            "dial_code": "+421"
+          },
+          {
+            "code": "SI",
+            "name": "Slovenia",
+            "dial_code": "+386"
+          },
+          {
+            "code": "SB",
+            "name": "Solomon Islands",
+            "dial_code": "+677"
+          },
+          {
+            "code": "SO",
+            "name": "Somalia",
+            "dial_code": "+252"
+          },
+          {
+            "code": "ZA",
+            "name": "South Africa",
+            "dial_code": "+27"
+          },
+          {
+            "code": "SS",
+            "name": "South Sudan",
+            "dial_code": "+211"
+          },
+          {
+            "code": "ES",
+            "name": "Spain",
+            "dial_code": "+34"
+          },
+          {
+            "code": "LK",
+            "name": "Sri Lanka",
+            "dial_code": "+94"
+          },
+          {
+            "code": "SD",
+            "name": "Sudan",
+            "dial_code": "+249"
+          },
+          {
+            "code": "SR",
+            "name": "Suriname",
+            "dial_code": "+597"
+          },
+          {
+            "code": "SE",
+            "name": "Sweden",
+            "dial_code": "+46"
+          },
+          {
+            "code": "CH",
+            "name": "Switzerland",
+            "dial_code": "+41"
+          },
+          {
+            "code": "SY",
+            "name": "Syria",
+            "dial_code": "+963"
+          },
+          {
+            "code": "TW",
+            "name": "Taiwan",
+            "dial_code": "+886"
+          },
+          {
+            "code": "TJ",
+            "name": "Tajikistan",
+            "dial_code": "+992"
+          },
+          {
+            "code": "TZ",
+            "name": "Tanzania",
+            "dial_code": "+255"
+          },
+          {
+            "code": "TH",
+            "name": "Thailand",
+            "dial_code": "+66"
+          },
+          {
+            "code": "TL",
+            "name": "Timor-Leste",
+            "dial_code": "+670"
+          },
+          {
+            "code": "TG",
+            "name": "Togo",
+            "dial_code": "+228"
+          },
+          {
+            "code": "TK",
+            "name": "Tokelau",
+            "dial_code": "+690"
+          },
+          {
+            "code": "TO",
+            "name": "Tonga",
+            "dial_code": "+676"
+          },
+          {
+            "code": "TT",
+            "name": "Trinidad and Tobago",
+            "dial_code": "+1868"
+          },
+          {
+            "code": "TN",
+            "name": "Tunisia",
+            "dial_code": "+216"
+          },
+          {
+            "code": "TR",
+            "name": "Turkey",
+            "dial_code": "+90"
+          },
+          {
+            "code": "TM",
+            "name": "Turkmenistan",
+            "dial_code": "+993"
+          },
+          {
+            "code": "TC",
+            "name": "Turks and Caicos Islands",
+            "dial_code": "+1649"
+          },
+          {
+            "code": "TV",
+            "name": "Tuvalu",
+            "dial_code": "+688"
+          },
+          {
+            "code": "UG",
+            "name": "Uganda",
+            "dial_code": "+256"
+          },
+          {
+            "code": "UA",
+            "name": "Ukraine",
+            "dial_code": "+380"
+          },
+          {
+            "code": "AE",
+            "name": "United Arab Emirates",
+            "dial_code": "+971"
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "dial_code": "+44"
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "dial_code": "+1"
+          },
+          {
+            "code": "UY",
+            "name": "Uruguay",
+            "dial_code": "+598"
+          },
+          {
+            "code": "UZ",
+            "name": "Uzbekistan",
+            "dial_code": "+998"
+          },
+          {
+            "code": "VU",
+            "name": "Vanuatu",
+            "dial_code": "+678"
+          },
+          {
+            "code": "VE",
+            "name": "Venezuela",
+            "dial_code": "+58"
+          },
+          {
+            "code": "VN",
+            "name": "Vietnam",
+            "dial_code": "+84"
+          },
+          {
+            "code": "VG",
+            "name": "Virgin Islands, British",
+            "dial_code": "+1284"
+          },
+          {
+            "code": "VI",
+            "name": "Virgin Islands, U.S.",
+            "dial_code": "+1340"
+          },
+          {
+            "code": "WF",
+            "name": "Wallis and Futuna",
+            "dial_code": "+681"
+          },
+          {
+            "code": "EH",
+            "name": "Western Sahara",
+            "dial_code": "+212"
+          },
+          {
+            "code": "YE",
+            "name": "Yemen",
+            "dial_code": "+967"
+          },
+          {
+            "code": "ZM",
+            "name": "Zambia",
+            "dial_code": "+260"
+          },
+          {
+            "code": "ZW",
+            "name": "Zimbabwe",
+            "dial_code": "+263"
+          },
+          {
+            "code": "GB-SCT",
+            "name": "Scotland",
+            "dial_code": "+44"
+          },
+          {
+            "code": "GB-WLS",
+            "name": "Wales",
+            "dial_code": "+44"
+          }
+        ],
+        "ProjectList": [
+          {
+            "name": "AIDA",
+            "value": "AIDA",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "Padel Living Residences",
+            "value": "Padel Living Residences",
+            "country": "Padel Living Residences, Jeddha",
+            "projectCode": "PLV",
+            "isOmanProject": false
+          },
+          {
+            "name": "Trump International Hotel & Resort Maldives",
+            "value": "TRUMP INTERNATIONAL HOTEL & RESORT MALDIVES",
+            "country": "Maldives | Noonu Atoll",
+            "projectCode": "",
+            "isOmanProject": false
+          },
+          {
+            "name": "etoile",
+            "value": "etoile",
+            "country": "Riyadh, Saudi Arabia",
+            "projectCode": "",
+            "isOmanProject": false
+          },
+          {
+            "name": "Trump Mansions, Rayana, Wadi Safar",
+            "value": "Trump Mansions",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "D’Mansions, Wadi Safar",
+            "value": "D’Mansions",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "Amaya, Wadi Safar",
+            "value": "Amaya",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "Altara, Wadi Safar",
+            "value": "Altara",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "Rayana Kingdom, Rayana, Wadi Safar",
+            "value": "Rayana Kingdom",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "Trump Executive Residences, Amaya, Jeddah",
+            "value": "Trump Executive Residences",
+            "country": "saudi-arabia",
+            "projectCode": "TP",
+            "isOmanProject": false
+          },
+          {
+            "name": "Trump Park Residences, Amaya, Jeddah",
+            "value": "Trump Park Residences",
+            "country": "saudi-arabia",
+            "projectCode": "TP",
+            "isOmanProject": false
+          },
+          {
+            "name": "Rayana Mansions, Rayana, Wadi Safar",
+            "value": "Rayana Mansions",
+            "country": "saudi-arabia",
+            "projectCode": "RY",
+            "isOmanProject": false
+          },
+          {
+            "name": "Lumaia, Doha",
+            "value": "Lumaia",
+            "country": "Doha, Lumaia",
+            "projectCode": "LZ",
+            "isOmanProject": false
+          },
+          {
+            "name": "Marea-Interiors by Missoni",
+            "value": "Marea-Interiors by Missoni",
+            "country": "",
+            "projectCode": "MA",
+            "isOmanProject": false
+          },
+          {
+            "name": "Tierra Viva",
+            "value": "Tierra Viva",
+            "country": "",
+            "projectCode": "TV",
+            "isOmanProject": false
+          },
+          {
+            "name": "The Astera",
+            "value": "The Astera, Interiors by Aston Martin",
+            "country": "",
+            "projectCode": "AM",
+            "isOmanProject": false
+          },
+          {
+            "name": "DG1",
+            "value": "DG1",
+            "country": "",
+            "projectCode": "DG1",
+            "isOmanProject": false
+          },
+          {
+            "name": "Da Vinci Tower, Interiors by Pagani",
+            "value": "Da Vinci Tower interiors by Pagani",
+            "country": "",
+            "projectCode": "DVT",
+            "isOmanProject": false
+          },
+          {
+            "name": "W Residences",
+            "value": "W Residences",
+            "country": "",
+            "projectCode": "WR",
+            "isOmanProject": false
+          },
+          {
+            "name": "Urban Oasis",
+            "value": "Urban Oasis",
+            "country": "",
+            "projectCode": "UOT",
+            "isOmanProject": false
+          },
+          {
+            "name": "The Mulliner",
+            "value": "The Mulliner",
+            "country": "",
+            "projectCode": "",
+            "isOmanProject": false
+          },
+          {
+            "name": "Les Vagues",
+            "value": "Les Vagues",
+            "country": "",
+            "projectCode": "LVA",
+            "isOmanProject": false
+          },
+          {
+            "name": "Trump International Hotel, Oman",
+            "value": "Trump International Hotel",
+            "country": "Oman",
+            "projectCode": "AIDA_THO",
+            "isOmanProject": true
+          },
+          {
+            "name": "Trump Cliff Villas",
+            "value": "Trump Cliff Villas",
+            "country": "Oman",
+            "projectCode": "AIDA_TH",
+            "isOmanProject": true
+          },
+          {
+            "name": "Trump Golf Villas",
+            "value": "Trump Golf Villas",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "Fairway Villas",
+            "value": "Fairway Villas",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "Coastal Investment Villas",
+            "value": "Coastal Investment Villas",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "The Great Escape",
+            "value": "The Great Escape",
+            "country": "Oman",
+            "projectCode": "TG",
+            "isOmanProject": true
+          },
+          {
+            "name": "The Great Escape 2",
+            "value": "The Great Escape 2",
+            "country": "Oman",
+            "projectCode": "TG2",
+            "isOmanProject": true
+          },
+          {
+            "name": "Neptune Interiors by Mouawad",
+            "value": "Neptune Interiors by Mouawad",
+            "country": "saudi-arabia",
+            "projectCode": "NIM",
+            "isOmanProject": false
+          },
+          {
+            "name": "Marriott Residences Aida, Oman",
+            "value": "Marriott Residences Aida, Oman",
+            "country": "Oman",
+            "projectCode": "MR",
+            "isOmanProject": true
+          },
+          {
+            "name": "Trump Tower Jeddah",
+            "value": "Trump Tower Jeddah",
+            "country": "saudi-arabia",
+            "projectCode": "TJ",
+            "isOmanProject": false
+          },
+          {
+            "name": "L'Horizon",
+            "value": "L'Horizon",
+            "country": "",
+            "projectCode": "LZ",
+            "isOmanProject": false
+          },
+          {
+            "name": "Sunrise Haven",
+            "value": "Sunrise Haven",
+            "country": "Oman",
+            "projectCode": "AIDA1",
+            "isOmanProject": true
+          },
+          {
+            "name": "Halo Villas",
+            "value": "Halo Villas",
+            "country": "Oman",
+            "projectCode": "",
+            "isOmanProject": true
+          },
+          {
+            "name": "Trump International Hotel & Tower Dubai",
+            "value": "Trump International Hotel & Tower Dubai",
+            "country": "",
+            "projectCode": "TTD",
+            "isOmanProject": false
+          },
+          {
+            "name": "D-Villas At Jumeirah Golf Estates",
+            "value": "D-Villas At Jumeirah Golf Estates",
+            "country": "",
+            "projectCode": "JGE",
+            "isOmanProject": false
+          },
+          {
+            "name": "Amour Sans Detour",
+            "value": "Amour Sans Detour",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "Amour Sans Detour 2",
+            "value": "Amour Sans Detour 2",
+            "country": "Oman",
+            "projectCode": "AIDA",
+            "isOmanProject": true
+          },
+          {
+            "name": "Nickelodeon Hotels & Resorts – AIDA, Oman",
+            "value": "Nickelodeon Hotels & Resorts – AIDA, Oman",
+            "country": "Oman",
+            "projectCode": "",
+            "isOmanProject": true
+          },
+          {
+            "name": "Trump International Simaisma, Qatar",
+            "value": "Trump International Simaisma, Qatar",
+            "country": "Simaisma, Qatar",
+            "projectCode": "SM",
+            "isOmanProject": false
+          },
+          {
+            "name": "Darglobal mansions - Fendi Casa",
+            "value": "Darglobal mansions - Fendi Casa",
+            "country": "Rayana, Wadi Safar",
+            "projectCode": "RY",
+            "isOmanProject": false
+          }
+        ],
+        "createdAt": "2026-01-10T12:47:25.866Z",
+        "updatedAt": "2026-11-10T08:24:45.759Z",
+        "publishedAt": "2026-01-10T12:52:22.600Z",
+        "locale": "en",
+        "OneOfOneList": [
+          {
+            "name": "The Trump Penthouse",
+            "value": "The Trump Penthouse"
+          },
+          {
+            "name": "The Pagani Penthouse",
+            "value": "The Pagani Penthouse"
+          },
+          {
+            "name": "Top Of the Astera",
+            "value": "Top Of the Astera"
+          },
+          {
+            "name": "The Mulliner",
+            "value": "The Mulliner"
+          },
+          {
+            "name": "Albert Hall Mansions",
+            "value": "Albert Hall Mansions"
+          },
+          {
+            "name": "Painite Villas Design Inspired by Automobili Lamborghini",
+            "value": "Painite Villas"
+          },
+          {
+            "name": "Azure Oceanfront Villas Interiors by Fendi Casa",
+            "value": "Azure Oceanfront Villas Interiors by Fendi Casa"
+          }
+        ],
+        "footerListing": [
+          {
+            "id": 3978,
+            "href": "/one-of-one",
+            "label": "Premiere Edition <br/>Collection",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 3979,
+            "href": "https://agents.darglobal.co.uk/",
+            "label": "Agent <br/>Connect",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 3982,
+            "href": "/investor",
+            "label": "Investor <br/>Relations",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 3980,
+            "href": "/blog",
+            "label": "Blogs",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 3981,
+            "href": "/press",
+            "label": "News",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 5069,
+            "href": "https://darglobal.thetalentpool.co.in/web/careers/#/positions",
+            "label": "Careers",
+            "events": null,
+            "target": "_blank"
+          },
+          {
+            "id": 5070,
+            "href": "/pay-online",
+            "label": "Pay Online",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 5071,
+            "href": "/get-in-touch",
+            "label": "Get in Touch",
+            "events": null,
+            "target": null
+          },
+          {
+            "id": 5072,
+            "href": "/why-invest",
+            "label": "Why Invest",
+            "events": null,
+            "target": null
+          }
+        ],
+        "Header": {
+          "id": 240,
+          "LogoLink": "/",
+          "RegisterInterest": {
+            "id": 4831,
+            "ButtonTheme": "primary",
+            "label": "Register Interest",
+            "href": null,
+            "target": null
+          },
+          "HeaderCallBtn": {
+            "id": 4830,
+            "ButtonTheme": "primary",
+            "label": null,
+            "href": "#",
+            "target": null
+          },
+          "NavLink": [
+            {
+              "id": 6608,
+              "label": "Projects",
+              "href": "/projects",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6609,
+              "label": "Collaborations",
+              "href": "/partners",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6610,
+              "label": "About",
+              "href": "/about",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6611,
+              "label": "The Signature Collection",
+              "href": "/one-of-one",
+              "target": null,
+              "events": null
+            }
+          ],
+          "Logo": {
+            "data": {
+              "id": 20,
+              "attributes": {
+                "name": "logo.png",
+                "alternativeText": "Darglobal",
+                "caption": null,
+                "width": 459,
+                "height": 42,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".png",
+                    "url": "https://cdn.darglobal.co.uk/thumbnail_logo_6de4b95bc9.png",
+                    "hash": "thumbnail_logo_6de4b95bc9",
+                    "mime": "image/png",
+                    "name": "thumbnail_logo.png",
+                    "path": null,
+                    "size": 2.82,
+                    "width": 245,
+                    "height": 22
+                  }
+                },
+                "hash": "logo_6de4b95bc9",
+                "ext": ".png",
+                "mime": "image/png",
+                "size": 1.19,
+                "url": "https://cdn.darglobal.co.uk/logo_6de4b95bc9.png",
+                "previewUrl": null,
+                "provider": "aws-s3",
+                "provider_metadata": null,
+                "createdAt": "2024-01-08T13:44:23.209Z",
+                "updatedAt": "2025-09-18T16:17:55.590Z"
+              }
+            }
+          }
+        },
+        "Footer": {
+          "id": 224,
+          "Copyright": "© 2026 DarGlobal. All rights reserved. ",
+          "seoFooterList": {
+            "Discover Luxury Properties": [
+              {
+                "href": "/projects/properties-in-uae/villas",
+                "text": "Luxury Villas in UAE",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-uk/apartments",
+                "text": "Luxury Apartments in UK",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-spain/villas",
+                "text": "Luxury Villas in Spain",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-oman/apartments",
+                "text": "Luxury Apartments in Oman",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-qatar/villas",
+                "text": "Luxury Villas in Qatar",
+                "target": "_self"
+              }
+            ],
+            "Luxury Properties By Country": [
+              {
+                "href": "/projects/properties-in-uae",
+                "text": "Luxury Properties in UAE",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-uk",
+                "text": "Luxury Properties in UK",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-saudi-arabia",
+                "text": "Luxury Properties in Saudi Arabia",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-oman",
+                "text": "Luxury Properties in Oman",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-qatar",
+                "text": "Luxury Properties in Qatar",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-spain",
+                "text": "Luxury Properties in Spain",
+                "target": "_self"
+              }
+            ],
+            "Luxury Real Estate Collections": [
+              {
+                "href": "/projects/properties-in-saudi-arabia/villas",
+                "text": "Luxury Villas in Saudi Arabia",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-saudi-arabia/apartments",
+                "text": "Luxury Apartments in Saudi Arabia",
+                "target": "_self"
+              },
+              {
+                "href": "/rayana/trump-mansions",
+                "text": "Luxury Mansions in Saudi Arabia",
+                "target": "_self"
+              },
+              {
+                "href": "/amaya/amaya-plots",
+                "text": "Luxury Plots in Saudi Arabia",
+                "target": "_self"
+              },
+              {
+                "href": "/projects/properties-in-oman/hotel-rooms",
+                "text": "Luxury Hotel Residences in Oman",
+                "target": "_self"
+              },
+              {
+                "href": "/projects",
+                "text": "Real Estate Investments",
+                "target": "_self"
+              }
+            ]
+          },
+          "FooterLinks": [
+            {
+              "id": 6612,
+              "label": "Privacy Policy",
+              "href": "/privacy-policy",
+              "target": null,
+              "events": "https://cdn.darglobal.co.uk/HR_Data_Privacy_Policy_statement_c1c625073b.pdf"
+            },
+            {
+              "id": 6613,
+              "label": "Terms of Use",
+              "href": "/terms-of-uses",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6614,
+              "label": "Cookie Policy",
+              "href": "/terms-conditions",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6615,
+              "label": "Anti slavery and human trafficking statement",
+              "href": "https://cdn.darglobal.co.uk/DG_Anti_Slavery_Statement_FY_2026_7af7efaf3a.pdf",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 8285,
+              "label": "Remuneration Committee",
+              "href": "https://cdn.darglobal.co.uk/Remuneration_Committee_12834cfd1e.pdf",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 8286,
+              "label": "Nomination Committee",
+              "href": "https://cdn.darglobal.co.uk/Nomination_Committee_To_Rs_v2_1_CLEAN_0b9a75cbd8.pdf",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 8287,
+              "label": "Audit & Risk",
+              "href": "https://cdn.darglobal.co.uk/Audit_and_Risk_2026_41cd00b3f9.pdf",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 6616,
+              "label": "FAQ - Frequently Asked Questions",
+              "href": "/faq",
+              "target": null,
+              "events": null
+            },
+            {
+              "id": 7282,
+              "label": "Insights",
+              "href": "/insights",
+              "target": null,
+              "events": null
+            }
+          ],
+          "footerSocial": [
+            {
+              "id": 1117,
+              "url": "https://www.instagram.com/darglobalofficial/?igshid=YmMyMTA2M2Y%3D",
+              "Label": "Instagram",
+              "alt": null,
+              "events": null
+            },
+            {
+              "id": 1118,
+              "url": "https://www.facebook.com/DarGlobalOfficial",
+              "Label": "Facebook",
+              "alt": null,
+              "events": null
+            },
+            {
+              "id": 1119,
+              "url": "https://twitter.com/dar_global",
+              "Label": null,
+              "alt": null,
+              "events": null
+            },
+            {
+              "id": 1120,
+              "url": "https://www.linkedin.com/company/darglobalofficial",
+              "Label": null,
+              "alt": null,
+              "events": null
+            },
+            {
+              "id": 1121,
+              "url": "https://linktr.ee/darglobalofficial?fbclid=PAAabloACLThlCSHAjZslB81YbvyFOjbT8aPHlhvJLaoHkNJ_3s8jj2aoOeJs_aem_AacurY0cZ0OdQT3iwkCpcGWDZRpyWN02EwXAWx_i_xb-yFFXlky6_zytDhZe9hZOZJQ",
+              "Label": null,
+              "alt": null,
+              "events": null
+            }
+          ],
+          "FooterLogo": {
+            "data": {
+              "id": 1790,
+              "attributes": {
+                "name": "logo_6de4b95bc9.png",
+                "alternativeText": "",
+                "caption": "",
+                "width": 459,
+                "height": 42,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".png",
+                    "url": "https://cdn.darglobal.co.uk/thumbnail_logo_6de4b95bc9_c19103f51b.png",
+                    "hash": "thumbnail_logo_6de4b95bc9_c19103f51b",
+                    "mime": "image/png",
+                    "name": "thumbnail_logo_6de4b95bc9.png",
+                    "path": null,
+                    "size": 2.85,
+                    "width": 245,
+                    "height": 22
+                  }
+                },
+                "hash": "logo_6de4b95bc9_c19103f51b",
+                "ext": ".png",
+                "mime": "image/png",
+                "size": 1.19,
+                "url": "https://cdn.darglobal.co.uk/logo_6de4b95bc9_c19103f51b.png",
+                "previewUrl": null,
+                "provider": "aws-s3",
+                "provider_metadata": null,
+                "createdAt": "2024-07-19T10:07:51.339Z",
+                "updatedAt": "2024-07-19T10:07:51.339Z"
+              }
+            }
+          }
+        },
+        "DesktopMenu": [
+          {
+            "id": 2684,
+            "label": "Building Communities",
+            "href": "/",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4038,
+                "label": "AIDA",
+                "href": "/landing-page/aida",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4037,
+                "label": "Amaya",
+                "href": "/amaya/amaya-plots",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4036,
+                "label": "Rayana",
+                "href": "/rayana/trump-mansions",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4039,
+                "label": "Tierra Viva ",
+                "href": "/tierra-viva",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4105,
+                "label": "MAD - Muscat Marine, Art & Digital District",
+                "href": "/press/darglobal-art-district-real-estate-mad-muscat-marine-art-digital-district",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2685,
+            "label": "Real Estate developments",
+            "href": "/projects",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 3974,
+                "label": "View all",
+                "href": "/projects",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 3975,
+                "label": "Spain",
+                "href": "/projects/properties-in-spain",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/marea",
+                    "name": "Marea Interiors by Missoni",
+                    "image": "https://cdn.darglobal.co.uk/Homepage_Latest_Projects_1_ebfde82e04.jpg",
+                    "location": "Cortesin | Spain"
+                  },
+                  {
+                    "href": "/tierra-viva",
+                    "name": "Tierra Viva, Design inspired by Automobili Lamborghini",
+                    "image": "https://cdn.darglobal.co.uk/1st_image_b14905844a.jpg",
+                    "location": "Benahavis | Spain"
+                  },
+                  {
+                    "href": "/one-of-one/painite-villas-design-inspired-by-Automobili-Lamborghini",
+                    "name": "Painite Villas Design Inspired by Automobili Lamborghini",
+                    "image": "https://cdn.darglobal.co.uk/Painite_Villa_int_2_2_2_599819cadf.png",
+                    "location": "Benahavis | Spain"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3976,
+                "label": "United Arab Emirates",
+                "href": "/projects/properties-in-uae",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/trump-international-hotel-and-tower-dubai",
+                    "name": "Trump International Hotel & Tower Dubai",
+                    "image": "https://cdn.darglobal.co.uk/TTD_exterior_18_2e337201e3.webp",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/dg-villas-at-jge",
+                    "name": "D-Villas At Jumeirah Golf Estates",
+                    "image": "https://cdn.darglobal.co.uk/RA_JGE_G_1_FRONT_FINAL_231124_c5f8de4e0f.jpg",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/the-astera",
+                    "name": "The Astera, Interiors By Aston Martin",
+                    "image": "https://cdn.darglobal.co.uk/J001267_DG_01_Rak_Al_Marjan_S07_Exterior_Hero_Final_web_520bfa333d.jpg",
+                    "location": "Al Marjan Island | RAK | United Arab Emirates"
+                  },
+                  {
+                    "href": "/dg1",
+                    "name": "DG1",
+                    "image": "https://cdn.darglobal.co.uk/DG_1_Tower_A_copy_2_a7cae1a410.jpg",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/davinci-tower-by-pagani",
+                    "name": "Da Vinci Tower, Interiors by Pagani",
+                    "image": "https://cdn.darglobal.co.uk/04_Da_Vinci_1_bfcf45b97a.jpg",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/urban-oasis-by-missoni",
+                    "name": "Urban Oasis By Missoni",
+                    "image": "https://cdn.darglobal.co.uk/03_Missoni_a5f80e7d4f.jpg",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/w-residences",
+                    "name": "W Residences",
+                    "image": "https://cdn.darglobal.co.uk/02_W_c264d5d645.jpg",
+                    "location": "Dubai | United Arab Emirates"
+                  },
+                  {
+                    "href": "/one-of-one/project-pagani",
+                    "name": "The Pagani Penthouse",
+                    "image": "https://cdn.darglobal.co.uk/asdasdasdasdasdasadada_1da82ccb98.png",
+                    "location": "Dubai | United Arab Emirates"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3977,
+                "label": "Qatar",
+                "href": "/projects/properties-in-qatar",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/les-vagues",
+                    "name": "Les Vagues by Elie Saab",
+                    "image": "https://cdn.darglobal.co.uk/Resize_ELS_Kitchen_Dining_Area_copy_82e4aef123.jpg",
+                    "location": "Doha | Qatar"
+                  },
+                  {
+                    "href": "/lp/trump-international-qatar",
+                    "name": "Trump International Simaisma, Qatar",
+                    "image": "https://cdn.darglobal.co.uk/Main_Banner_simaisma_21703fef30.jpeg",
+                    "location": "Simaisma, Qatar"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3978,
+                "label": "Oman",
+                "href": "/projects/properties-in-oman",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/aida-trump-international-hotel",
+                    "name": "Trump International Hotel",
+                    "image": "https://cdn.darglobal.co.uk/UMO_05_Hotel_Entrance_EF_2_v2_2_9d056f4f46.jpg",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/aida-trump-international-cliff-villas",
+                    "name": "Trump Cliff Villas",
+                    "image": "https://cdn.darglobal.co.uk/OTT_02_Rear_View_EF_copy_2_1fdef6df2a.jpg",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/aida-trump-villas",
+                    "name": "Trump Golf Villas",
+                    "image": "https://cdn.darglobal.co.uk/Dar_Global_AIDA_Trump_International_Golf_Club_Oman_Bird_Eye_view_copy_2_f8de1c2555_73ac71012a.jpg",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/landing-page/aida",
+                    "name": "AIDA",
+                    "image": "https://cdn.darglobal.co.uk/aida_banner_2bffcec04e.png",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/fairway-villas-aida-oman",
+                    "name": "Fairway Villas",
+                    "image": "https://cdn.darglobal.co.uk/OMA_48_Villa385m_33_B_Rear_View_EF_1_24d851d68a.jpg",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/marriott-residences-aida-oman",
+                    "name": "Marriott Residences",
+                    "image": "https://cdn.darglobal.co.uk/OMS_01_Facade_EF_3_V2_1_99c38d3510.jpg",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/amour-sans-detour",
+                    "name": "Amour sans detour",
+                    "image": "https://cdn.darglobal.co.uk/Amour_Sans_Detour_0f2575ade5.webp",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/amour-sans-detour-2",
+                    "name": "Amour sans detour 2",
+                    "image": "https://cdn.darglobal.co.uk/bdrad0xrqljtfocrjtck_12f17c632f.webp",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/the-great-escape-1-aida-oman",
+                    "name": "The Great Escape",
+                    "image": "https://cdn.darglobal.co.uk/OAP_01_Aerial_EF_2_1_1413c46e57.jpg",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/the-great-escape-2-aida-oman",
+                    "name": "The Great Escape 2",
+                    "image": "https://cdn.darglobal.co.uk/image001_c9fab30f1a.jpg",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/aida-coastal-investment-villas",
+                    "name": "Coastal Investment Villas",
+                    "image": "https://cdn.darglobal.co.uk/coastal_1_7918cde260.jpg",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/Sunrise-Haven-Luxury-Villas",
+                    "name": "Sunrise Haven",
+                    "image": "https://cdn.darglobal.co.uk/Dar_Global_AIDA_Attached_Villa_Front_a563238fcb.jpg",
+                    "location": "Muscat | Oman"
+                  },
+                  {
+                    "href": "/play-project/nickelodeon",
+                    "name": "Nickelodeon Hotels & Resorts",
+                    "image": "https://cdn.darglobal.co.uk/Banner_1_ee12663739.webp",
+                    "location": "AIDA | Oman"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3979,
+                "label": "United Kingdom",
+                "href": "/projects/properties-in-uk",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/the-mulliner",
+                    "name": "The Mulliner",
+                    "image": "https://cdn.darglobal.co.uk/A_Winship_8714_69_High_6272bc1b3a.jpg",
+                    "location": "London | United Kingdom"
+                  },
+                  {
+                    "href": "/one-of-one/THE-ALBERT-HALL-MANSION",
+                    "name": "Albert Hall Mansions",
+                    "image": "https://cdn.darglobal.co.uk/Mask_group_b1fe983b2b.png",
+                    "location": "London | United Kingdom"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3980,
+                "label": "Saudi Arabia",
+                "href": "/projects/properties-in-saudi-arabia",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/rayana/darglobal-mansions-fendi-casa",
+                    "name": "DarGlobal Mansions Interiors by Fendi Casa",
+                    "image": "https://cdn.darglobal.co.uk/1349_690_px_d110b988e5.png",
+                    "location": "Wadi Safar | Riyadh | Saudi Arabia"
+                  },
+                  {
+                    "href": "/rayana/trump-mansions",
+                    "name": "Trump Mansions",
+                    "image": "https://cdn.darglobal.co.uk/1_NNNNNN_VXS_DES_BLD_ARC_GEN_REN_004_JPG_000_36f1595147.webp",
+                    "location": "Wadi Safar  |Riyadh | Saudi Arabia"
+                  },
+                  {
+                    "href": "/neptune",
+                    "name": "Neptune, Interiors by Mouawad",
+                    "image": "https://cdn.darglobal.co.uk/NQS_DAR_AL_ARKAN_SEDRA_VIEW_01_VILLA_FRONT_VIEW_FI_OP_1_ed096258a6.jpg",
+                    "location": "Riyadh | Saudi Arabia"
+                  },
+                  {
+                    "href": "/trump-tower-jeddah",
+                    "name": "Trump Tower Jeddah",
+                    "image": "https://cdn.darglobal.co.uk/c01_32a5a699f9.jpg",
+                    "location": "Jeddah | Saudi Arabia"
+                  },
+                  {
+                    "href": "/trump-plaza/executive-residences",
+                    "name": "Trump Executive Residences",
+                    "image": "https://cdn.darglobal.co.uk/Residential_View_1_4077cb8848.png",
+                    "location": "Amaya Jeddah | Saudi Arabia"
+                  },
+                  {
+                    "href": "/amaya/amaya-plots",
+                    "name": "Amaya",
+                    "image": "https://cdn.darglobal.co.uk/amaya_1e8824a066.webp",
+                    "location": "Amaya | Jeddah | Saudi Arabia"
+                  },
+                  {
+                    "href": "/trump-plaza/park-residences",
+                    "name": "Trump Park Residences",
+                    "image": "https://cdn.darglobal.co.uk/D_Gx_Trump_Plaza_Front_Entrance_96e5b71a80.webp",
+                    "location": "Amaya | Jeddah | Saudi Arabia"
+                  }
+                ],
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2703,
+            "label": "Asset Management",
+            "href": null,
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4010,
+                "label": "Spain",
+                "href": "#",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "#",
+                    "name": "Coming Soon",
+                    "image": "https://cdn.darglobal.co.uk/shutterstock_2443439349_1_1b28bbcf05.jpg",
+                    "location": "Costa Del Sol, Spain"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4011,
+                "label": "Qatar",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/lp/trump-international-qatar",
+                    "name": "Trump International Simaisma, Qatar",
+                    "image": "https://cdn.darglobal.co.uk/Main_Banner_simaisma_21703fef30.jpeg",
+                    "location": "Simaisma, Qatar"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4012,
+                "label": "Oman",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/landing-page/aida",
+                    "name": "AIDA",
+                    "image": "https://cdn.darglobal.co.uk/Aida_8974587775.webp",
+                    "location": "AIDA, Oman"
+                  },
+                  {
+                    "href": "/press/darglobal-art-district-real-estate-mad-muscat-marine-art-digital-district",
+                    "name": "MAD - Muscat Marine, Art & Digital District",
+                    "image": "https://cdn.darglobal.co.uk/MAD_0906c8ef90.webp",
+                    "location": "Oman"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4013,
+                "label": "Saudi Arabia",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/amaya/amaya-plots",
+                    "name": "Amaya, Jeddah",
+                    "image": "https://cdn.darglobal.co.uk/amaya_1e8824a066.webp",
+                    "location": "Amaya | Jeddah | KSA"
+                  }
+                ],
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2715,
+            "label": "Collaborations",
+            "href": null,
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4061,
+                "label": "The Trump Organization",
+                "href": "/partners/the-trump-organization",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4056,
+                "label": "Lamborghini",
+                "href": "/partners/lamborghini",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4060,
+                "label": "Pagani",
+                "href": "/partners/pagani",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4098,
+                "label": "Fendi Casa",
+                "href": "/partners/fendi-casa",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4053,
+                "label": "Aston Martin",
+                "href": "/partners/aston-martin",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4062,
+                "label": "W Hotels",
+                "href": "/partners/w-hotels",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4058,
+                "label": "Missoni",
+                "href": "/partners/missoni",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4054,
+                "label": "Elie Saab",
+                "href": "/partners/elie-saab",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4059,
+                "label": "Mouawad",
+                "href": "/partners/mouawad",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4057,
+                "label": "Marriott International Residences",
+                "href": "/partners/marriott-residences-aida-oman",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4055,
+                "label": "Insignia",
+                "href": "/insignia",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4103,
+                "label": "Paramount",
+                "href": "/partners/paramount",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2708,
+            "label": "Golf",
+            "href": "/luxury-golf-communities",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2692,
+            "label": "Hospitality",
+            "href": "/hospitality",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2709,
+            "label": "Commercial",
+            "href": "/commercial",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2702,
+            "label": "Tokenization",
+            "href": "/tokenization",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2690,
+            "label": "NEWSROOM",
+            "href": "#/",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 3997,
+                "label": "News",
+                "href": "/press",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 3998,
+                "label": "blog",
+                "href": "/blog",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2693,
+            "label": "Investor Relations",
+            "href": "/investor",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2688,
+            "label": "About Us",
+            "href": "/about",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2696,
+            "label": "Contact us",
+            "href": "/get-in-touch",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2697,
+            "label": "Terms and Conditions",
+            "href": "#/",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4001,
+                "label": "Terms Of Use",
+                "href": "/terms-of-uses",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4002,
+                "label": "Privacy Policy",
+                "href": "/privacy-policy",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          }
+        ],
+        "MobileMenu": [
+          {
+            "id": 2670,
+            "label": "Building Communities",
+            "href": "/",
+            "target": null,
+            "event": "Home",
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4034,
+                "label": "AIDA",
+                "href": "/landing-page/aida",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4033,
+                "label": "Amaya",
+                "href": "/amaya/amaya-plots",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4032,
+                "label": "Rayana",
+                "href": "/rayana/rayana-mansions",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4035,
+                "label": "Tierra Viva ",
+                "href": "/tierra-viva",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4106,
+                "label": "MAD - Muscat Marine, Art & Digital District",
+                "href": "/press/darglobal-art-district-real-estate-mad-muscat-marine-art-digital-district",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2671,
+            "label": "Real Estate developments",
+            "href": "#/",
+            "target": null,
+            "event": "Projects",
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 3946,
+                "label": "Spain",
+                "href": "/projects/properties-in-spain",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-spain",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/marea",
+                    "name": "Marea Interiors by Missoni"
+                  },
+                  {
+                    "href": "/tierra-viva",
+                    "name": "Tierra Viva, Design inspired by Automobili Lamborghini"
+                  },
+                  {
+                    "href": "/one-of-one/painite-villas-design-inspired-by-Automobili-Lamborghini",
+                    "name": "Painite Villas Design Inspired by Automobili Lamborghini"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3947,
+                "label": "United Arab Emirates",
+                "href": "/projects/properties-in-uae",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-uae",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/Trump-International-Hotel-Tower-Dubai",
+                    "name": "Trump International Hotel & Tower Dubai"
+                  },
+                  {
+                    "href": "/dg-villas-at-jge",
+                    "name": "D-Villas At Jumeirah Golf Estates"
+                  },
+                  {
+                    "href": "/the-astera",
+                    "name": "The Astera, Interiors By Aston Martin"
+                  },
+                  {
+                    "href": "/dg1",
+                    "name": "DG1"
+                  },
+                  {
+                    "href": "/davinci-tower-by-pagani",
+                    "name": "Da Vinci Tower, Interiors by Pagani"
+                  },
+                  {
+                    "href": "/urban-oasis-by-missoni/",
+                    "name": "Urban Oasis By Missoni"
+                  },
+                  {
+                    "href": "/w-residences/",
+                    "name": "W Residences"
+                  },
+                  {
+                    "href": "/one-of-one/project-pagani",
+                    "name": "The Pagani Penthouse"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3948,
+                "label": "Qatar",
+                "href": "/projects/properties-in-qatar",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-qatar",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/les-vagues",
+                    "name": "Les Vagues by Elie Saab"
+                  },
+                  {
+                    "href": "/lp/trump-international-qatar",
+                    "name": "Trump International Simaisma, Qatar"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3949,
+                "label": "Oman",
+                "href": "/projects/properties-in-oman",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-oman",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/aida-trump-international-hotel",
+                    "name": "Trump International Hotel",
+                    "image": "https://cdn.darglobal.co.uk/UMO_05_Hotel_Entrance_EF_2_v2_2_9d056f4f46.jpg",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/aida-trump-international-cliff-villas",
+                    "name": "Trump Cliff Villas",
+                    "image": "https://cdn.darglobal.co.uk/OTT_02_Rear_View_EF_copy_2_1fdef6df2a.jpg",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/aida-trump-villas",
+                    "name": "Trump Golf Villas",
+                    "image": "https://cdn.darglobal.co.uk/Dar_Global_AIDA_Trump_International_Golf_Club_Oman_Bird_Eye_view_copy_2_f8de1c2555_73ac71012a.jpg",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/landing-page/aida",
+                    "name": "AIDA",
+                    "image": "https://cdn.darglobal.co.uk/aida_banner_2bffcec04e.png",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/fairway-villas-aida-oman",
+                    "name": "Fairway Villas",
+                    "image": "https://cdn.darglobal.co.uk/OMA_48_Villa385m_33_B_Rear_View_EF_1_24d851d68a.jpg",
+                    "location": "AIDA, Oman"
+                  },
+                  {
+                    "href": "/marriott-residences-aida-oman",
+                    "name": "Marriott Residences",
+                    "image": "https://cdn.darglobal.co.uk/OMS_01_Facade_EF_3_V2_1_99c38d3510.jpg",
+                    "location": "AIDA, Oman"
+                  },
+                  {
+                    "href": "/amour-sans-detour",
+                    "name": "Amour sans detour",
+                    "image": "https://cdn.darglobal.co.uk/Amour_Sans_Detour_0f2575ade5.webp",
+                    "location": "AIDA, Muscat, Oman"
+                  },
+                  {
+                    "href": "/the-great-escape-1-aida-oman",
+                    "name": "The Great Escape",
+                    "image": "https://cdn.darglobal.co.uk/OAP_01_Aerial_EF_2_1_1413c46e57.jpg",
+                    "location": "AIDA, Oman"
+                  },
+                  {
+                    "href": "/the-great-escape-2-aida-oman",
+                    "name": "The Great Escape 2",
+                    "image": "https://cdn.darglobal.co.uk/image001_c9fab30f1a.jpg",
+                    "location": "AIDA, Oman"
+                  },
+                  {
+                    "href": "/aida-coastal-investment-villas",
+                    "name": "Coastal Investment Villas",
+                    "image": "https://cdn.darglobal.co.uk/coastal_1_7918cde260.jpg",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/Sunrise-Haven-Luxury-Villas",
+                    "name": "Sunrise Haven",
+                    "image": "https://cdn.darglobal.co.uk/Dar_Global_AIDA_Attached_Villa_Front_a563238fcb.jpg",
+                    "location": "Muscat, Oman"
+                  },
+                  {
+                    "href": "/play-project/nickelodeon",
+                    "name": "Nickelodeon Hotels & Resorts",
+                    "image": "https://cdn.darglobal.co.uk/Banner_1_ee12663739.webp",
+                    "location": "AIDA | Oman"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3950,
+                "label": "United Kingdom",
+                "href": "/projects/properties-in-uk",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-uk",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/the-mulliner",
+                    "name": "The Mulliner"
+                  },
+                  {
+                    "href": "/one-of-one/THE-ALBERT-HALL-MANSION",
+                    "name": "Albert Hall Mansions"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 3951,
+                "label": "Saudi Arabia",
+                "href": "/projects/properties-in-saudi-arabia",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/projects/properties-in-saudi-arabia",
+                    "name": "VIEW ALL"
+                  },
+                  {
+                    "href": "/rayana/darglobal-mansions-fendi-casa",
+                    "name": "Darglobal Mansions Interiors by Fendi Casa",
+                    "image": "https://cdn.darglobal.co.uk/1349_690_px_d110b988e5.png",
+                    "location": "Wadi Safar | Riyadh | Saudi Arabia"
+                  },
+                  {
+                    "href": "/rayana/trump-mansions",
+                    "name": "Trump Mansions",
+                    "image": "https://cdn.darglobal.co.uk/1_NNNNNN_VXS_DES_BLD_ARC_GEN_REN_004_JPG_000_36f1595147.webp",
+                    "location": "Rayana, Wadi Safar, Riyadh"
+                  },
+                  {
+                    "href": "/neptune",
+                    "name": "Neptune, Interiors by Mouawad",
+                    "image": "https://cdn.darglobal.co.uk/NQS_DAR_AL_ARKAN_SEDRA_VIEW_01_VILLA_FRONT_VIEW_FI_OP_1_ed096258a6.jpg",
+                    "location": "Riyadh, Saudi Arabia"
+                  },
+                  {
+                    "href": "/trump-tower-jeddah",
+                    "name": "Trump Tower Jeddah",
+                    "image": "https://cdn.darglobal.co.uk/c01_32a5a699f9.jpg",
+                    "location": "Jeddah, KSA"
+                  },
+                  {
+                    "href": "/trump-plaza/executive-residences",
+                    "name": "Trump Executive Residences",
+                    "image": "https://cdn.darglobal.co.uk/Residential_View_1_4077cb8848.png",
+                    "location": "Amaya Jeddah, KSA"
+                  },
+                  {
+                    "href": "/amaya/amaya-plots",
+                    "name": "Amaya",
+                    "image": "https://cdn.darglobal.co.uk/amaya_1e8824a066.webp",
+                    "location": "Amaya Jeddah, KSA"
+                  },
+                  {
+                    "href": "/trump-plaza/park-residences",
+                    "name": "Trump Park Residences",
+                    "image": "https://cdn.darglobal.co.uk/D_Gx_Trump_Plaza_Front_Entrance_96e5b71a80.webp",
+                    "location": "Amaya Jeddah, KSA"
+                  }
+                ],
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2698,
+            "label": "Asset Management",
+            "href": null,
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4006,
+                "label": "Spain",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "",
+                    "name": "Coming Soon",
+                    "image": "https://cdn.darglobal.co.uk/shutterstock_2443439349_1_1b28bbcf05.jpg",
+                    "location": "Costa Del Sol | Spain"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4007,
+                "label": "Qatar",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/lp/trump-international-qatar",
+                    "name": "Trump International Simaisma, Qatar",
+                    "image": "https://cdn.darglobal.co.uk/Main_Banner_simaisma_21703fef30.jpeg",
+                    "location": "Simaisma, Qatar"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4008,
+                "label": "Oman",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/landing-page/aida",
+                    "name": "AIDA",
+                    "image": "https://cdn.darglobal.co.uk/Aida_8974587775.webp",
+                    "location": "AIDA | Oman"
+                  },
+                  {
+                    "href": "/press/darglobal-art-district-real-estate-mad-muscat-marine-art-digital-district",
+                    "name": "MAD - Muscat Marine, Art & Digital District",
+                    "image": "https://cdn.darglobal.co.uk/MAD_0906c8ef90.webp",
+                    "location": "Oman"
+                  }
+                ],
+                "image": null
+              },
+              {
+                "id": 4009,
+                "label": "Saudi Arabia",
+                "href": null,
+                "target": null,
+                "event": null,
+                "InnerSubMenu": [
+                  {
+                    "href": "/amaya/amaya-plots",
+                    "name": "Amaya, Jeddah",
+                    "image": "https://cdn.darglobal.co.uk/amaya_1e8824a066.webp",
+                    "location": "Amaya | Jeddah | KSA"
+                  }
+                ],
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2716,
+            "label": "Collaborations",
+            "href": null,
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 4071,
+                "label": "The Trump Organization",
+                "href": "/partners/the-trump-organization",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4066,
+                "label": "Lamborghini",
+                "href": "/partners/lamborghini",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4070,
+                "label": "Pagani",
+                "href": "/partners/pagani",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4097,
+                "label": "Fendi Casa",
+                "href": "/partners/fendi-casa",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4063,
+                "label": "Aston Martin",
+                "href": "/partners/aston-martin",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4072,
+                "label": "W Hotels",
+                "href": "/partners/w-hotels",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4068,
+                "label": "Missoni",
+                "href": "/partners/missoni",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4064,
+                "label": "Elie Saab",
+                "href": "/partners/elie-saab",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4069,
+                "label": "Mouawad",
+                "href": "/partners/mouawad",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4067,
+                "label": "Marriott International Residences",
+                "href": "/partners/marriott-residences-aida-oman",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4065,
+                "label": "Insignia",
+                "href": "/insignia",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 4104,
+                "label": "Paramount",
+                "href": "/partners/paramount",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2679,
+            "label": "Golf",
+            "href": "/luxury-golf-communities",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2677,
+            "label": "Hospitality",
+            "href": "/hospitality",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2678,
+            "label": "Commercial",
+            "href": "/commercial",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2676,
+            "label": "NEWSROOM",
+            "href": "#/",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 3968,
+                "label": "News",
+                "href": "/press",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 3969,
+                "label": "blog",
+                "href": "/blog",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          },
+          {
+            "id": 2700,
+            "label": "Tokenization",
+            "href": "/tokenization",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2710,
+            "label": "Investor Relations",
+            "href": "/investor",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2707,
+            "label": "about us",
+            "href": "/about",
+            "target": null,
+            "event": null,
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2682,
+            "label": "contact us",
+            "href": "/get-in-touch",
+            "target": null,
+            "event": "Get in touch",
+            "Button": [],
+            "innerMenu": []
+          },
+          {
+            "id": 2683,
+            "label": "Terms and Conditions",
+            "href": "#/",
+            "target": null,
+            "event": "Terms and Conditions",
+            "Button": [],
+            "innerMenu": [
+              {
+                "id": 3972,
+                "label": "Terms Of Use",
+                "href": "/terms-of-uses",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              },
+              {
+                "id": 3973,
+                "label": "Privacy Policy",
+                "href": "/privacy-policy",
+                "target": null,
+                "event": null,
+                "InnerSubMenu": null,
+                "image": null
+              }
+            ]
+          }
+        ],
+        "HeaderScript": [],
+        "HeaderTag": [],
+        "HeaderScriptDynamic": [],
+        "Redirection_URL": [
+          {
+            "id": 35,
+            "redirectFrom": "/aida-rizz-villas",
+            "redirectTo": "/landing-page/aida"
+          },
+          {
+            "id": 36,
+            "redirectFrom": "/play-project/nickelodeon",
+            "redirectTo": "/"
+          }
+        ]
+      }
+    }
+  ],
+  "processed_items": [
+    {
+      "id": "dg-corporate-profile",
+      "name": "DarGlobal Corporate Profile & Brand Information",
+      "project_code": "DARGLOBAL",
+      "source": "DarGlobal",
+      "property_type": "Developer Overview",
+      "country": "United Kingdom / International",
+      "city": "London / Dubai",
+      "location": "Mayfair, London, UK & DIFC, Dubai, UAE",
+      "developer": "DarGlobal PLC (LSE: DAR)",
+      "description": "DarGlobal PLC is an international luxury real estate developer listed on the London Stock Exchange. The company specializes in developing second homes and luxury holiday residences in prime international locations across the United Kingdom, Spain, Oman, Qatar, Maldives, and Saudi Arabia. DarGlobal is distinguished by its exclusive collaborations with prestigious global luxury brands including Aston Martin, Automobili Lamborghini, Pagani Automobili, Elie Saab, Missoni, Fendi Casa, Mouawad, The Trump Organization, and Marriott International.",
+      "amenities": [
+        "London Stock Exchange Listed",
+        "World-Class Architectural Collaborations",
+        "Prime Waterfront and Oceanfront Locations",
+        "Exclusive Global Real Estate Portfolios",
+        "High Capital Appreciation & Rental Yield Potential"
+      ],
+      "specifications": {
+        "headquarters": "London, United Kingdom",
+        "stock_ticker": "LSE: DAR",
+        "target_markets": [
+          "Oman",
+          "Saudi Arabia",
+          "United Arab Emirates",
+          "Spain",
+          "Qatar",
+          "Maldives",
+          "United Kingdom"
+        ],
+        "luxury_partners": [
+          "Aston Martin",
+          "Lamborghini",
+          "Pagani",
+          "Elie Saab",
+          "Missoni",
+          "Trump",
+          "Marriott"
+        ]
+      },
+      "price": "Ultra-Luxury Investment Portfolio",
+      "currency": "USD / GBP / SAR / AED / EUR",
+      "source_url": "https://darglobal.co.uk/about",
+      "scraped_at": "2026-11-18T10:31:50.023230+00:00"
+    },
+    {
+      "id": "dg-proj-1",
+      "name": "AIDA",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat (Yiti & Yenkit Cliffs)",
+      "location": "Muscat (Yiti & Yenkit Cliffs), Oman",
+      "developer": "DarGlobal",
+      "description": "AIDA is a 5-million-square-meter gated master development perched 130 meters above the sea on the dramatic cliffs of Yiti and Yenkit in Muscat, Oman. Developed by DarGlobal in partnership with the Trump Organization and Omran Group, AIDA features ultra-luxury Trump Cliff Villas, Trump Golf Villas, an 18-hole championship golf course, Trump International Hotel, and the Nickelodeon Hotels & Resorts.",
+      "amenities": [
+        "Trump International 18-Hole Championship Golf Course",
+        "Cliff-Edge Infinity Swimming Pools",
+        "Luxury Wellness Centers and Spas",
+        "Members-Only Clubhouse and Dining",
+        "Private Hiking Trails & Spectacular Arabian Sea Views"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/aida-360",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-2",
+      "name": "Padel Living Residences",
+      "project_code": "PLV",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "Saudi Arabia",
+      "city": "Padel Living Residences, Jeddha",
+      "location": "Padel Living Residences, Jeddha, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Padel Living Residences is a premier luxury development by DarGlobal situated in Padel Living Residences, Jeddha, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "PLV",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/padel-living-residences",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-3",
+      "name": "Trump International Hotel & Resort Maldives",
+      "project_code": "",
+      "source": "DarGlobal",
+      "property_type": "Hotel & Resort Residences",
+      "country": "Maldives",
+      "city": "Noonu Atoll",
+      "location": "Noonu Atoll, Maldives",
+      "developer": "DarGlobal",
+      "description": "Trump International Hotel & Resort Maldives is a premier luxury development by DarGlobal situated in Noonu Atoll, Maldives. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-international-hotel-resort-maldives",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-4",
+      "name": "etoile",
+      "project_code": "",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Saudi Arabia",
+      "city": "Riyadh, Saudi Arabia",
+      "location": "Riyadh, Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "etoile is a premier luxury development by DarGlobal situated in Riyadh, Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/etoile",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-5",
+      "name": "Trump Mansions, Rayana, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Trump Mansions, Rayana, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-mansions-rayana-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-6",
+      "name": "D’Mansions, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "D’Mansions, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/d-mansions-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-7",
+      "name": "Amaya, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Amaya, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/amaya-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-8",
+      "name": "Altara, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Altara, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/altara-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-9",
+      "name": "Rayana Kingdom, Rayana, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Rayana Kingdom, Rayana, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/rayana-kingdom-rayana-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-10",
+      "name": "Trump Executive Residences, Amaya, Jeddah",
+      "project_code": "TP",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Trump Executive Residences, Amaya, Jeddah is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "TP",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-executive-residences-amaya-jeddah",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-11",
+      "name": "Trump Park Residences, Amaya, Jeddah",
+      "project_code": "TP",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Trump Park Residences, Amaya, Jeddah is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "TP",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-park-residences-amaya-jeddah",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-12",
+      "name": "Rayana Mansions, Rayana, Wadi Safar",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Rayana Mansions, Rayana, Wadi Safar is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/rayana-mansions-rayana-wadi-safar",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-13",
+      "name": "Lumaia, Doha",
+      "project_code": "LZ",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Qatar",
+      "city": "Doha / Simaisma",
+      "location": "Doha / Simaisma, Qatar",
+      "developer": "DarGlobal",
+      "description": "Lumaia, Doha is a premier luxury development by DarGlobal situated in Doha / Simaisma, Qatar. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "LZ",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/lumaia-doha",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-14",
+      "name": "Marea-Interiors by Missoni",
+      "project_code": "MA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Spain",
+      "city": "Benahavís / Cortesín, Costa del Sol",
+      "location": "Benahavís / Cortesín, Costa del Sol, Spain",
+      "developer": "DarGlobal",
+      "description": "Marea-Interiors by Missoni is a premier luxury development by DarGlobal situated in Benahavís / Cortesín, Costa del Sol, Spain. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Missoni",
+        "project_code": "MA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/marea-interiors-by-missoni",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-15",
+      "name": "Tierra Viva",
+      "project_code": "TV",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Spain",
+      "city": "Benahavís, Costa del Sol",
+      "location": "Benahavís, Costa del Sol, Spain",
+      "developer": "DarGlobal",
+      "description": "Tierra Viva is an ultra-luxury, gated villa community in the hills of Benahavís, Costa Del Sol, developed by DarGlobal with design inspired by Automobili Lamborghini. A limited collection of villas ranging from 700 to 1,450 sqm sits tiered across the hillside, each positioned for panoramic views of the Mediterranean Sea. Located 15 minutes from Marbella and minutes from Puerto Banús and 12 golf clubs.",
+      "amenities": [
+        "Gated Community",
+        "Premium 24/7 Security",
+        "The Pianite Villas with car Lift",
+        "Sauna",
+        "Steam Room"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "TV",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/tierra-viva",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-16",
+      "name": "The Astera",
+      "project_code": "AM",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "United Arab Emirates",
+      "city": "Al Marjan Island, Ras Al Khaimah",
+      "location": "Al Marjan Island, Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "The Astera, Interiors by Aston Martin is a beachfront residential development on Al Marjan Island, Ras Al Khaimah, by DarGlobal. Residences range from one- to three-bedroom apartments and three-bedroom beach villas, spanning 61 to 265 sqm, with Aston Martin-designed interiors and direct access to the beach on the water's edge.",
+      "amenities": [
+        "Direct Beach Access",
+        "Premium 24/7 Security",
+        "Fitness Center",
+        "Spa",
+        "Infinity Pool",
+        "Sauna",
+        "Pool Bar",
+        "Indoor Cinema",
+        "Yoga Lawn",
+        "Multipurpose Hall",
+        "Kids play area"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AM",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/the-astera",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-17",
+      "name": "DG1",
+      "project_code": "DG1",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "United Arab Emirates",
+      "city": "Business Bay, Dubai",
+      "location": "Business Bay, Dubai, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "An exclusive capsule collection of luxury residences made for people who see what others don’t, do what others only dream of, and craft their futures on their own terms. The architecture of DG1 fully reflects its dynamic attitude. Like a haute couture creation, its distinctive twisting profile opens the doors of imagination, inspiring each of us in a different way.",
+      "amenities": [
+        "State-of-the-art Gym",
+        "Infinity Swimming Pool",
+        "Landscaped Podium",
+        "24hrs Reception Desk",
+        "Sky Garden",
+        "Yoga Studio"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "DG1",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/dg1",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-18",
+      "name": "Da Vinci Tower, Interiors by Pagani",
+      "project_code": "DVT",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "United Arab Emirates",
+      "city": "Dubai / Ras Al Khaimah",
+      "location": "Dubai / Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "Da Vinci Tower, Interiors by Pagani is a premier luxury development by DarGlobal situated in Dubai / Ras Al Khaimah, United Arab Emirates. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Pagani",
+        "project_code": "DVT",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/da-vinci-tower-interiors-by-pagani",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-19",
+      "name": "W Residences",
+      "project_code": "WR",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "United Arab Emirates",
+      "city": "Dubai / Ras Al Khaimah",
+      "location": "Dubai / Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "W Residences is a premier luxury development by DarGlobal situated in Dubai / Ras Al Khaimah, United Arab Emirates. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "WR",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/w-residences",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-20",
+      "name": "Urban Oasis",
+      "project_code": "UOT",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "United Arab Emirates",
+      "city": "Dubai / Ras Al Khaimah",
+      "location": "Dubai / Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "Urban Oasis is a premier luxury development by DarGlobal situated in Dubai / Ras Al Khaimah, United Arab Emirates. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "UOT",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/urban-oasis",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-21",
+      "name": "The Mulliner",
+      "project_code": "",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "International",
+      "city": "",
+      "location": ", International",
+      "developer": "DarGlobal",
+      "description": "The Mulliner is a premier luxury development by DarGlobal situated in , International. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/the-mulliner",
+      "scraped_at": "2026-11-18T10:31:50.028119+00:00"
+    },
+    {
+      "id": "dg-proj-22",
+      "name": "Les Vagues",
+      "project_code": "LVA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Qatar",
+      "city": "Qetaifan Island North, Lusail",
+      "location": "Qetaifan Island North, Lusail, Qatar",
+      "developer": "DarGlobal",
+      "description": "Les Vagues is a premier luxury development by DarGlobal situated in , International. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "State Of The Art Fitness Center",
+        "Infinity Swimming Pool",
+        "4 Personal Elevators, Inclusive Of A Service Elevator To All Floors",
+        "Lounges And Lobby Areas: Furniture Designed And Selected By Elie Saab",
+        "24hrs Reception Desk",
+        "Luxury Retail",
+        "Parking For All Units",
+        "Landscaped Community Courtyard With Seaviews"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "LVA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/les-vagues",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-23",
+      "name": "Trump International Hotel, Oman",
+      "project_code": "AIDA_THO",
+      "source": "DarGlobal",
+      "property_type": "Hotel & Resort Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Trump International Hotel, Oman is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "AIDA_THO",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-international-hotel-oman",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-24",
+      "name": "Trump Cliff Villas",
+      "project_code": "AIDA_TH",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Trump Cliff Villas is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "AIDA_TH",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-cliff-villas",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-25",
+      "name": "Trump Golf Villas",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Trump Golf Villas is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-golf-villas",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-26",
+      "name": "Fairway Villas",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Fairway Villas is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/fairway-villas",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-27",
+      "name": "Coastal Investment Villas",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Coastal Investment Villas is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/coastal-investment-villas",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-28",
+      "name": "The Great Escape",
+      "project_code": "TG",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "The Great Escape is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "TG",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/the-great-escape",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-29",
+      "name": "The Great Escape 2",
+      "project_code": "TG2",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "The Great Escape 2 is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "TG2",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/the-great-escape-2",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-30",
+      "name": "Neptune Interiors by Mouawad",
+      "project_code": "NIM",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Neptune Interiors by Mouawad is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Mouawad",
+        "project_code": "NIM",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/neptune-interiors-by-mouawad",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-31",
+      "name": "Marriott Residences Aida, Oman",
+      "project_code": "MR",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "Oman",
+      "city": "Muscat (Yiti & Yenkit Cliffs)",
+      "location": "Muscat (Yiti & Yenkit Cliffs), Oman",
+      "developer": "DarGlobal",
+      "description": "AIDA is a 5-million-square-meter gated master development perched 130 meters above the sea on the dramatic cliffs of Yiti and Yenkit in Muscat, Oman. Developed by DarGlobal in partnership with the Trump Organization and Omran Group, AIDA features ultra-luxury Trump Cliff Villas, Trump Golf Villas, an 18-hole championship golf course, Trump International Hotel, and the Nickelodeon Hotels & Resorts.",
+      "amenities": [
+        "Trump International 18-Hole Championship Golf Course",
+        "Cliff-Edge Infinity Swimming Pools",
+        "Luxury Wellness Centers and Spas",
+        "Members-Only Clubhouse and Dining",
+        "Private Hiking Trails & Spectacular Arabian Sea Views"
+      ],
+      "specifications": {
+        "brand_collaboration": "Marriott",
+        "project_code": "MR",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/aida-360",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-32",
+      "name": "Trump Tower Jeddah",
+      "project_code": "TJ",
+      "source": "DarGlobal",
+      "property_type": "High-Rise Luxury Apartments",
+      "country": "Saudi Arabia",
+      "city": "Saudi Arabia",
+      "location": "Saudi Arabia, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Trump Tower Jeddah is a premier luxury development by DarGlobal situated in Saudi Arabia, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "TJ",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-tower-jeddah",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-33",
+      "name": "L'Horizon",
+      "project_code": "LZ",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "International",
+      "city": "",
+      "location": ", International",
+      "developer": "DarGlobal",
+      "description": "L'Horizon is a premier luxury development by DarGlobal situated in , International. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "LZ",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/l-horizon",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-34",
+      "name": "Sunrise Haven",
+      "project_code": "AIDA1",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Sunrise Haven is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA1",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/sunrise-haven",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-35",
+      "name": "Halo Villas",
+      "project_code": "",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Halo Villas is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/halo-villas",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-36",
+      "name": "Trump International Hotel & Tower Dubai",
+      "project_code": "TTD",
+      "source": "DarGlobal",
+      "property_type": "Hotel & Resort Residences",
+      "country": "United Arab Emirates",
+      "city": "Dubai / Ras Al Khaimah",
+      "location": "Dubai / Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "Trump International Hotel & Tower Dubai is a premier luxury development by DarGlobal situated in Dubai / Ras Al Khaimah, United Arab Emirates. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "TTD",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-international-hotel-tower-dubai",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-37",
+      "name": "D-Villas At Jumeirah Golf Estates",
+      "project_code": "JGE",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "United Arab Emirates",
+      "city": "Dubai / Ras Al Khaimah",
+      "location": "Dubai / Ras Al Khaimah, United Arab Emirates",
+      "developer": "DarGlobal",
+      "description": "D-Villas At Jumeirah Golf Estates is a premier luxury development by DarGlobal situated in Dubai / Ras Al Khaimah, United Arab Emirates. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "JGE",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/d-villas-at-jumeirah-golf-estates",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-38",
+      "name": "Amour Sans Detour",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Amour Sans Detour is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/amour-sans-detour",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-39",
+      "name": "Amour Sans Detour 2",
+      "project_code": "AIDA",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Oman",
+      "city": "Muscat / AIDA",
+      "location": "Muscat / AIDA, Oman",
+      "developer": "DarGlobal",
+      "description": "Amour Sans Detour 2 is a premier luxury development by DarGlobal situated in Muscat / AIDA, Oman. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "DarGlobal Signature",
+        "project_code": "AIDA",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/amour-sans-detour-2",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-40",
+      "name": "Nickelodeon Hotels & Resorts – AIDA, Oman",
+      "project_code": "",
+      "source": "DarGlobal",
+      "property_type": "Hotel & Resort Residences",
+      "country": "Oman",
+      "city": "Muscat (Yiti & Yenkit Cliffs)",
+      "location": "Muscat (Yiti & Yenkit Cliffs), Oman",
+      "developer": "DarGlobal",
+      "description": "AIDA is a 5-million-square-meter gated master development perched 130 meters above the sea on the dramatic cliffs of Yiti and Yenkit in Muscat, Oman. Developed by DarGlobal in partnership with the Trump Organization and Omran Group, AIDA features ultra-luxury Trump Cliff Villas, Trump Golf Villas, an 18-hole championship golf course, Trump International Hotel, and the Nickelodeon Hotels & Resorts.",
+      "amenities": [
+        "Trump International 18-Hole Championship Golf Course",
+        "Cliff-Edge Infinity Swimming Pools",
+        "Luxury Wellness Centers and Spas",
+        "Members-Only Clubhouse and Dining",
+        "Private Hiking Trails & Spectacular Arabian Sea Views"
+      ],
+      "specifications": {
+        "brand_collaboration": "Nickelodeon",
+        "project_code": "",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/aida-360",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-41",
+      "name": "Trump International Simaisma, Qatar",
+      "project_code": "SM",
+      "source": "DarGlobal",
+      "property_type": "Luxury Residences",
+      "country": "Qatar",
+      "city": "Doha / Simaisma",
+      "location": "Doha / Simaisma, Qatar",
+      "developer": "DarGlobal",
+      "description": "Trump International Simaisma, Qatar is a premier luxury development by DarGlobal situated in Doha / Simaisma, Qatar. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Trump",
+        "project_code": "SM",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/trump-international-simaisma-qatar",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-42",
+      "name": "Darglobal mansions - Fendi Casa",
+      "project_code": "RY",
+      "source": "DarGlobal",
+      "property_type": "Luxury Villas & Mansions",
+      "country": "Saudi Arabia",
+      "city": "Rayana, Wadi Safar",
+      "location": "Rayana, Wadi Safar, Saudi Arabia",
+      "developer": "DarGlobal",
+      "description": "Darglobal mansions - Fendi Casa is a premier luxury development by DarGlobal situated in Rayana, Wadi Safar, Saudi Arabia. Designed to the highest international standards, this landmark project exemplifies world-class architecture, bespoke craftsmanship, and prime real estate value.",
+      "amenities": [
+        "Exclusive Concierge Service",
+        "Private Swimming Pools & Spa",
+        "Panoramic Landscape Views",
+        "State-of-the-Art Fitness Center",
+        "24/7 Gated Security"
+      ],
+      "specifications": {
+        "brand_collaboration": "Fendi Casa",
+        "project_code": "RY",
+        "target_market": "High-Net-Worth International Investors"
+      },
+      "price": "Price Upon Request / On Application",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/darglobal-mansions-fendi-casa",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-43",
+      "name": "The Trump Penthouse",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "The Trump Penthouse is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-44",
+      "name": "The Pagani Penthouse",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "The Pagani Penthouse is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-45",
+      "name": "Top Of the Astera",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "Top Of the Astera is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-46",
+      "name": "Albert Hall Mansions",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "Albert Hall Mansions is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-47",
+      "name": "Painite Villas Design Inspired by Automobili Lamborghini",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "Painite Villas Design Inspired by Automobili Lamborghini is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    },
+    {
+      "id": "dg-proj-48",
+      "name": "Azure Oceanfront Villas Interiors by Fendi Casa",
+      "project_code": "ONE-OF-ONE",
+      "source": "DarGlobal",
+      "property_type": "Ultra-Luxury Penthouse / Trophy Asset",
+      "country": "International / Prime Global",
+      "city": "Iconic Global Locations",
+      "location": "Global Trophy Real Estate",
+      "developer": "DarGlobal One of One Collection",
+      "description": "Azure Oceanfront Villas Interiors by Fendi Casa is an elite trophy residence in DarGlobal's exclusive 'One of One' Premier Edition Collection. These unique bespoke residences are individually crafted for ultra-high-net-worth individuals seeking unparalleled architectural prestige, bespoke design partnerships, and legendary international addresses.",
+      "amenities": [
+        "Private Helipad / Sky Entrance Access",
+        "Private Panoramic Penthouse Terraces",
+        "Custom Interior Architecture by World Haute Couture Houses",
+        "Dedicated 24/7 VIP Butler & Concierge Service"
+      ],
+      "specifications": {
+        "collection": "One of One Premier Edition",
+        "rarity": "Unique Trophy Asset"
+      },
+      "price": "Exclusive Ultra-High-Net-Worth Portfolio",
+      "currency": "USD",
+      "source_url": "https://darglobal.co.uk/one-of-one",
+      "scraped_at": "2026-11-18T10:31:50.028633+00:00"
+    }
+  ],
+  "status": "success",
+  "limitations": []
+}

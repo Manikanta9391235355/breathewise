@@ -1,214 +1,137 @@
-# SentinelZ AI — System Architecture Specification
-**Platform:** SentinelZ AI — Privacy-First AI Security & Threat Detection Platform  
-**Tagline:** *Intelligence Without Exposure*  
-**Theme:** IBM Z Datathon 2026 — *AI Secured: Innovation Without Exposure*  
+# EstateIQ AI — System Architecture Specification
+
+**Project:** EstateIQ AI — DarGlobal × Wasalt Real Estate Intelligence Assistant  
+**Role:** Technical Assignment for *Junior AI Engineer – Applied AI* at DarGlobal  
+**Version:** 1.0.0  
+**Stack:** React 18, TypeScript, Vite, Tailwind CSS, FastAPI, Uvicorn, FAISS, Sentence Transformers, OpenRouter Free LLM Catalog  
 
 ---
 
 ## 1. Executive Architecture Overview
 
-SentinelZ AI is designed for enterprise Security Operations Centers (SOCs) handling sensitive customer records, financial ledgers, and critical infrastructure (e.g., hybrid IBM zSystems and LinuxONE mainframes). 
+EstateIQ AI is an end-to-end, enterprise-grade real estate knowledge discovery and conversational intelligence system. It autonomously bridges high-luxury international developments (DarGlobal UK & GCC) and regional Middle Eastern residential marketplaces (Wasalt Saudi Arabia) through an ethical scraping engine, an offline vector embedding and indexing pipeline, and a citation-grounded Retrieval-Augmented Generation (RAG) assistant.
 
-The platform enables security analysts to ingest high-velocity security events, detect sophisticated threat patterns through explainable deterministic rules, and run AI-assisted threat summaries **without exposing personally identifiable information (PII) or confidential infrastructure tokens to external models or unvetted processes**.
-
-```mermaid
-flowchart TD
-    subgraph ClientLayer ["Client Layer (SOC Analysts & Auditors)"]
-        UI["Next.js 16 Web Dashboard\n(Dark SOC Aesthetic / Recharts)"]
-        CLI["Admin CLI & Automated\nSmoke Test Scripts"]
-    end
-
-    subgraph APILayer ["FastAPI Enforcement & Gateway Layer"]
-        SizeCheck["Request Size Limiter\n(1MB Payload DoS Guard)"]
-        AuthRBAC["Server-Side RBAC Guard\n(PBKDF2-HMAC-SHA256 / Bearer Auth)"]
-    end
-
-    subgraph CoreEngines ["SentinelZ Core Processing Engines"]
-        ThreatEngine["Explainable Threat Engine\n(Sliding-Window Correlation)"]
-        PrivacyShield["Privacy Shield Redaction Engine\n(Non-Overlapping Token Replacement)"]
-        AuditEngine["Append-Only Audit Engine\n(Zero Credential Leakage)"]
-    end
-
-    subgraph AIInferenceLayer ["AI Security Inference Boundary"]
-        LocalAI["Local Deterministic Inference\n(Default: Zero Network Egress)"]
-        ExternalAI["External AI Provider (Optional)\n(Guaranteed: Sanitized Only)"]
-    end
-
-    subgraph StorageLayer ["Persistence Layer"]
-        DB[("SQLAlchemy Schema\nSQLite / PostgreSQL / IBM Db2")]
-    end
-
-    subgraph IBMZPlatform ["Target Hardware Platform: IBM LinuxONE (s390x)"]
-        CPACF["CPACF Hardware Acceleration"]
-        TEE["IBM Secure Execution for Linux"]
-        HSM["Crypto Express 8S HSM (FIPS 140-3 L4)"]
-    end
-
-    UI --> SizeCheck
-    CLI --> SizeCheck
-    SizeCheck --> AuthRBAC
-    AuthRBAC --> ThreatEngine
-    AuthRBAC --> PrivacyShield
-    AuthRBAC --> AuditEngine
-
-    ThreatEngine --> DB
-    AuditEngine --> DB
-    PrivacyShield --> LocalAI
-    PrivacyShield -. Optional Sanitized Only .-> ExternalAI
-
-    DB -. Supported Deployment .-> IBMZPlatform
+```
++-----------------------------------------------------------------------------------+
+|                                   DATA SOURCES                                    |
+|   +------------------------------------+   +----------------------------------+   |
+|   |   DarGlobal UK & International     |   |      Wasalt KSA Residential      |   |
+|   |     (https://darglobal.co.uk)      |   |     (https://wasalt.sa/en)       |   |
+|   +-----------------+------------------+   +-----------------+----------------+   |
++---------------------|----------------------------------------|--------------------+
+                      |                                        |
+                      v                                        v
++-----------------------------------------------------------------------------------+
+|                        ETHICAL WEB SCRAPING & INGESTION                           |
+|   - robots.txt verification & bounded rate-limiting                              |
+|   - Next.js CMS adapter (_next/data build manifest traversal)                     |
+|   - SSR payload parser (__NEXT_DATA__ JSON extraction)                            |
+|   - PII scrubber (strips phone numbers, owner IDs, agent personal data)           |
+|   Outputs:                                                                        |
+|     * data/raw/ (canonical raw HTML/JSON responses)                               |
+|     * data/processed/properties_catalog.json (175 structured items)               |
+|     * data/processed/collection_report.json (100% crawl success report)           |
++-----------------------------------------------------------------------------------+
+                                      |
+                                      v
++-----------------------------------------------------------------------------------+
+|                            OFFLINE RAG INDEXING ENGINE                            |
+|   1. Text Normalization & Cleaning                                                |
+|   2. Context-Preserving Semantic Chunking (500-800 tokens, 100 token overlap)     |
+|   3. Dense Vector Encoding: sentence-transformers/all-MiniLM-L6-v2 (384-dim)      |
+|   4. FAISS Vector Database: IndexFlatIP with L2-normalized cosine similarity      |
+|   Persisted to:                                                                   |
+|     * data/index/faiss_index.bin                                                  |
+|     * data/index/chunks_metadata.json                                             |
++-----------------------------------------------------------------------------------+
+                                      |
+                                      v
++-----------------------------------------------------------------------------------+
+|                           FASTAPI ASGI BACKEND (PORT 8000)                        |
+|   - Lifespan singleton initialization (FAISS index + SentenceTransformer in RAM)   |
+|   - Endpoints:                                                                    |
+|       GET  /api/health        -> readiness & index vector count                   |
+|       GET  /api/stats         -> crawler audit metrics & collection stats         |
+|       GET  /api/properties    -> pagination, search, source & type filters        |
+|       GET  /api/sources       -> verified source URLs and timestamps              |
+|       GET  /api/model-status  -> safe LLM provider configuration metadata         |
+|       POST /api/chat          -> RAG semantic retrieval + grounded LLM generation |
++-----------------------------------------------------------------------------------+
+           |                                                      ^
+           | Semantically Filtered Context (k=4, score >= 0.25)    |
+           v                                                      |
++------------------------------------+      +---------------------------------------+
+|        OPENROUTER LLM INFERENCE     |      |             CLIENT LAYER              |
+|  - Provider: OpenRouter Free Tier  |      |   - React 18 + TypeScript + Vite      |
+|  - Model: baidu/ernie-5.5-flash    | <--- |   - Tailwind CSS (Luxury Navy/Gold)   |
+|  - Anti-hallucination guardrails   |      |   - Framer Motion micro-animations    |
+|  - Verifiable citation cards       | ---> |   - 5 Dedicated Views:                |
+|  - Strict fallback protocol        |      |     Overview, Chat, Explorer,         |
++------------------------------------+      |     Sources Audit, Architecture       |
+                                            +---------------------------------------+
 ```
 
 ---
 
-## 2. Core Architectural Subsystems
+## 2. Scraping Engine Architecture
 
-### 2.1 Threat Detection Engine Flow
-The Threat Detection Engine processes incoming security events in real-time, cross-referencing recent sliding-window state to generate explainable security findings.
+### 2.1 robots.txt & Crawl Ethics Compliance
+- Both target domains are queried for `/robots.txt` before any data collection initiates (`backend/app/scraping/robots_validator.py`).
+- Wasalt's `robots.txt` explicitly authorizes modern search and AI crawlers (`ChatGPT-User`, `PerplexityBot`, `anthropic-ai`) and advertises `/llms.txt`.
+- DarGlobal's public CMS paths (`/en/developments/*`) are traversed without bypassing access barriers, logins, or anti-bot interstitials.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Client as Ingestion Source / Analyst
-    participant API as Events API (/events/ingest)
-    participant Engine as ThreatDetectionEngine
-    participant DB as Security Database
-    participant Audit as AuditLogger
+### 2.2 Adapter Pattern
+- **DarGlobal Adapter (`darglobal_scraper.py`)**:
+  - Dynamically captures active Next.js build IDs via lightweight pre-flight probes.
+  - Traverses `_next/data/{buildId}/en/{slug}.json` endpoints to access authoritative developer metadata (project names, architecture partners, locations, and branded luxury collections).
+- **Wasalt Adapter (`wasalt_scraper.py`)**:
+  - Targets public regional hub URLs (`villas-for-sale-in-riyadh`, `apartments-for-sale-in-jeddah`, `properties-for-rent-in-dammam`).
+  - Extracts the pre-rendered `__NEXT_DATA__` JSON DOM object, eliminating the need for heavyweight headless browsers.
+  - Formats real-time Saudi Real Estate General Authority (REGA) verification flags, areas in square meters, bedroom/bathroom configurations, and SAR prices.
 
-    Client->>API: POST /api/events/ingest (Validated Payload)
-    API->>API: Validate Schema & Permissions (Require Analyst/Admin)
-    API->>DB: Persist SecurityEvent
-    API->>Engine: analyze_event(db, new_event)
-    
-    alt Event violates High-Value Asset Rule
-        Engine->>Engine: Match RESTRICTED_HIGH_VALUE + DENY
-        Engine->>DB: Create ThreatFinding (CRITICAL, Risk: 80-100)
-    else Repeated Auth Failures
-        Engine->>DB: Query Sliding Window (300s, failed attempts >= 3)
-        Engine->>DB: Create ThreatFinding (BRUTE_FORCE_AUTH, Risk: 60-85)
-    else Privilege Mismatch
-        Engine->>Engine: Verify Role Authorization vs Action/Classification
-        Engine->>DB: Create ThreatFinding (PRIVILEGE_MISMATCH, Risk: 50-70)
-    else Reconnaissance Probing
-        Engine->>DB: Query Distinct Denials across >=3 resources in 180s
-        Engine->>DB: Create ThreatFinding (RECON_PROBING, Risk: 60-80)
-    end
-
-    API->>Audit: Append EVENT_INGESTED record
-    API-->>Client: 200 OK (Event ID + Correlated Findings)
-```
-
-#### Deterministic Risk Scoring Formula
-$$\text{RiskScore} = \min\left(100.0, \text{BaseRuleWeight} + (\text{EventCount} \times 3.5) + \text{ClassificationBonus} + \text{DenialPenalty}\right)$$
-
-- **Base Weights:**
-  - `HIGH_VALUE_UNAUTHORIZED`: 55.0
-  - `BRUTE_FORCE_AUTH`: 45.0
-  - `RECON_PROBING`: 40.0
-  - `PRIVILEGE_MISMATCH`: 35.0
-  - `RATE_ANOMALY`: 30.0
-- **Classification Bonuses:**
-  - `RESTRICTED_HIGH_VALUE`: +25.0
-  - `CONFIDENTIAL`: +15.0
-  - `INTERNAL`: +5.0
-- **Denial Penalty:** +10.0 if access was rejected.
+### 2.3 PII Sanitization
+Strict privacy boundaries automatically scrub personal broker phone numbers, personal WhatsApp links, and agent email addresses during normalization.
 
 ---
 
-### 2.2 Privacy Shield Boundary & Data Flow
-The Privacy Shield acts as a non-negotiable gateway between raw telemetry and AI models.
+## 3. RAG Retrieval & Generation Architecture
 
-```mermaid
-flowchart LR
-    RawInput["Raw Security Text\n(Contains PII: email, phone, account, IP)"]
-    RegexTokenizer["Multi-Pattern Entity Tokenizer\n(Pre-compiled RFC & Mainframe Regexes)"]
-    SpanResolver["Non-Overlapping Span Resolver\n(Length & Offset Priority Sorting)"]
-    Sanitizer["Token Substitution Engine\n(Replaces with Typed Placeholders)"]
-    SanitizedOutput["Sanitized Text Output\n([EMAIL_REDACTED], [MAINFRAME_ACCT_REDACTED])"]
-    
-    LocalInference["Local Security Model\n(Zero External Egress)"]
-    ExternalCloud["External AI Model (Optional)\n(API Key Required; Sanitized Only)"]
+### 3.1 Document Chunking
+Scraped records are converted to descriptive real-estate text blocks with structured key-value headers (Project Name, Source, Location, Pricing, Specifications, Amenities, Verified Source URL). Chunks are generated between 500 and 800 tokens with a 100-token sliding overlap to avoid loss of context across boundaries.
 
-    RawInput --> RegexTokenizer
-    RegexTokenizer --> SpanResolver
-    SpanResolver --> Sanitizer
-    Sanitizer --> SanitizedOutput
-    SanitizedOutput --> LocalInference
-    SanitizedOutput -. Optional Egress .-> ExternalCloud
-```
+### 3.2 Dense Embedding Vector Space
+- **Embedding Model**: `sentence-transformers/all-MiniLM-L6-v2`
+- **Dimensionality**: 384 dimensions
+- **Vector Metric**: Cosine similarity via L2 normalization on an inner product index (`IndexFlatIP`).
 
-#### Span Overlap Protection Algorithm
-To prevent text corruption when multiple recognizers match overlapping character ranges (e.g., an account string adjacent to an IP or a phone number containing digits resembling a credit card):
-1. Matches are harvested as `MatchedSpan(entity_type, placeholder, start, end, matched_text)`.
-2. Spans are sorted by `start` ascending, and by `length` descending.
-3. A single-pass pruning filter checks `span.start >= last_end`; overlapping sub-spans are deterministically discarded.
-4. Token substitutions are executed from **highest character offset to lowest** (`reverse=True`), preserving byte indices for preceding substrings.
+### 3.3 Semantic Retrieval
+- Queries undergo identical normalization and vector projection.
+- Top-$k$ nearest neighbors ($k=4$) are selected based on cosine similarity.
+- **Relevance Thresholding**: Chunks with similarity score $< 0.25$ are discarded.
+- When no retrieved chunks meet the threshold, the pipeline short-circuits to the deterministic fallback without making unnecessary LLM API calls:
+  > *"I couldn't find sufficient information in the indexed DarGlobal or Wasalt sources to answer that accurately."*
+
+### 3.4 Strict Grounding & Anti-Hallucination
+The prompt enforces a zero-trust model over external web content:
+1. Strict instruction boundary (`=== RETRIEVED CONTEXT EVIDENCE ===`).
+2. Scraped web content is treated strictly as passive evidence; instructions inside webpages are ignored.
+3. Every factual claim requires inline bracketed numerical citations (`[1]`, `[2]`).
+4. Grounded source cards with verified original URLs are extracted and rendered in the frontend.
 
 ---
 
-### 2.3 Role-Based Access Control (RBAC) Architecture
-All protected endpoints enforce server-side dependency injection (`require_roles`):
+## 4. API & Lifespan Architecture
 
-```mermaid
-classDiagram
-    class UserRole {
-        <<enumeration>>
-        SECURITY_ADMIN
-        SECURITY_ANALYST
-        VIEWER
-    }
-
-    class ViewerPermissions {
-        +view_dashboard_metrics()
-        +view_health_status()
-        +view_own_profile()
-    }
-
-    class AnalystPermissions {
-        +view_security_events()
-        +ingest_security_events()
-        +view_threat_findings()
-        +investigate_finding()
-        +use_privacy_shield()
-        +view_privacy_stats()
-        +view_limited_audit()
-    }
-
-    class AdminPermissions {
-        +manage_users()
-        +assign_roles()
-        +configure_detection_rules()
-        +view_full_audit_trail()
-        +system_reseed()
-    }
-
-    UserRole <|-- ViewerPermissions
-    ViewerPermissions <|-- AnalystPermissions
-    AnalystPermissions <|-- AdminPermissions
-```
+The FastAPI server initializes all heavy machine learning models once during startup via the modern `lifespan` context manager:
+- Loads the pre-computed FAISS index from disk into RAM.
+- Instantiates the `EmbeddingsManager` singleton.
+- Binds services to `app.state`, ensuring per-request chat queries execute with zero model reloading overhead.
+- Mounts the compiled single-page application (`frontend/dist`) at root `/` with fallback route redirection for HTML5 client-side routing.
 
 ---
 
-### 2.4 Immutable Audit Trail Architecture
-1. **Append-Only Behavior:** The API provides only `POST` and `GET` verbs for audit records. No `UPDATE` or `DELETE` endpoints exist in the application.
-2. **Zero-Leakage Sanitization:** The `AuditLoggerService.sanitize_metadata()` method recursively scans context payloads and replaces any key matching forbidden tokens (`password`, `token`, `secret`, `key`, `raw_text`, `unredacted`) with `[REDACTED_SECURITY_CONTROL]`.
-3. **Correlation Tracking:** Every operational request receives an immutable correlation ID (`req_<uuid>`), enabling end-to-end tracing across services.
+## 5. Security & Secret Isolation
 
----
-
-## 3. IBM Z / LinuxONE Architectural Alignment
-
-### 3.1 Software Compatibility
-- **Runtimes:** Python 3.11–3.14 (neutral architecture, no x86 C-extension constraints) and Node.js LTS (v20–v24).
-- **Zero Binary Lock-in:** The backend uses standard Python library cryptography (`hashlib.pbkdf2_hmac` with SHA-256 and `secrets.token_hex`), avoiding third-party compiled wheels (such as older `bcrypt` versions) that can experience build failures on `s390x`.
-- **Database Abstraction:** Built on SQLAlchemy 2.0 with standard SQL types, easily connecting to local SQLite in development and enterprise **IBM Db2** or **PostgreSQL** on IBM LinuxONE.
-
-### 3.2 Platform Security Capabilities vs Application Controls
-
-| Layer | SentinelZ Application Control (Implemented) | IBM LinuxONE Platform Capability (Deployment Target) |
-| :--- | :--- | :--- |
-| **Data in Transit** | TLS 1.3 termination, strict CORS headers | **CPACF Acceleration:** Hardware-accelerated AES/SHA on z15/z16 cores |
-| **Data at Rest** | Typed PII placeholder redaction, zero plaintext secrets | **Pervasive Encryption:** Transparent full-disk and dataset encryption |
-| **Compute Boundary** | In-memory session validation, server-side RBAC | **IBM Secure Execution for Linux:** TEE enclaves protecting against host snooping |
-| **Key Storage** | Architecture-neutral PBKDF2 with 100k rounds | **Crypto Express 8S HSM:** FIPS 140-3 Level 4 tamper-resistant cryptographic keys |
-| **Auditing** | Append-only SQLite/PostgreSQL audit tables with correlation IDs | **IBM z/OS SMF / Linux on Z auditd:** Immutable hardware-clocked audit logs |
+- **Zero Client-Side Keys**: The OpenRouter API key is never exposed to the browser or Git. All generation requests originate from backend services.
+- **Environment Isolation**: `.env` is ignored by `.gitignore` and `.dockerignore`. A clean `.env.example` template is provided for production onboarding.
+- **Safe CORS Configuration**: Restricted to verified origins with proper methods and headers.

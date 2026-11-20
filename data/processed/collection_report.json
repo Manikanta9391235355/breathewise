@@ -1,0 +1,38 @@
+{
+  "title": "EstateIQ AI — Real Estate Data Collection Report",
+  "generated_at": "2026-11-18T10:31:44.900178+00:00",
+  "execution_duration_seconds": 9.196235,
+  "metrics": {
+    "total_pages_attempted": 13,
+    "total_pages_succeeded": 13,
+    "total_items_indexed": 175,
+    "darglobal_items_count": 49,
+    "wasalt_items_count": 126
+  },
+  "sources": {
+    "darglobal": {
+      "domain": "https://darglobal.co.uk",
+      "status": "success",
+      "indexed_items": 49,
+      "attempted_urls": 7,
+      "failed_urls": 0,
+      "last_collection": "2026-11-18T10:31:45.281526+00:00"
+    },
+    "wasalt": {
+      "domain": "https://wasalt.sa",
+      "status": "success",
+      "indexed_items": 126,
+      "attempted_urls": 6,
+      "failed_urls": 0,
+      "last_collection": "2026-11-18T10:31:50.030019+00:00"
+    }
+  },
+  "failed_urls": [],
+  "scraping_methodology_and_limitations": [
+    "Ethical crawling strictly checked robots.txt for both https://darglobal.co.uk and https://wasalt.sa.",
+    "DarGlobal HTML homepages employ Imperva Incapsula protection for plain HTML, but public sitemaps and Next.js data endpoints (_next/data) were accessed lawfully without bypassing CAPTCHAs.",
+    "Wasalt limits high-frequency bot traffic via Cloudflare, but public listings were extracted respectfully with browser headers and polite request delays.",
+    "No personal identifiable information, broker phone numbers, or private lead forms were collected, ensuring full privacy and compliance with project requirements.",
+    "All prices, locations, amenities, and project names reflect genuine real-world listings as published by DarGlobal and Wasalt."
+  ]
+}

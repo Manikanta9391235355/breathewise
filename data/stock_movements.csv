@@ -1,9 +1,0 @@
-movement_id,merchant_id,product_id,movement_date,movement_type,quantity,unit_cost_paise,notes
-M01-STK-20261113-01,M01,M01-P01,2026-11-13,daily_closing,4,2354,Daily closing ledger
-M01-STK-20261113-02,M01,M01-P02,2026-11-13,daily_closing,18,6139,Daily closing ledger
-M01-STK-20261113-03,M01,M01-P03,2026-11-13,daily_closing,9,2048,Daily closing ledger (Low Stock)
-M01-STK-20261113-04,M01,M01-P04,2026-11-13,daily_closing,15,17852,Daily closing ledger
-M01-STK-20261113-05,M01,M01-P05,2026-11-13,daily_closing,12,11216,Daily closing ledger
-M01-STK-20261113-06,M01,M01-P06,2026-11-13,daily_closing,8,18884,Daily closing ledger
-M01-STK-20261113-07,M01,M01-P07,2026-11-13,daily_closing,22,2660,Daily closing ledger
-M01-STK-20261113-08,M01,M01-P08,2026-11-13,daily_closing,14,3824,Daily closing ledger

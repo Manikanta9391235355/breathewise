@@ -7,18 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        paytm: {
-          navy: '#002970',
-          darknavy: '#0f2744',
-          blue: '#0052cc',
-          cyan: '#00b9f1',
-          lightcyan: '#e6f8fd',
-          surface: '#f5f7fb',
-          accent: '#00b9f1',
-          gold: '#f59e0b',
-          green: '#10b981',
-          red: '#ef4444'
+        estate: {
+          dark: '#080E1E',
+          navy: '#0F1A30',
+          card: '#152238',
+          border: '#223354',
+          gold: '#C5A880',
+          goldlight: '#DFCAAB',
+          goldhover: '#B5966B',
+          accent: '#2A4365',
+          cream: '#F9F8F6',
+          muted: '#8A99AD',
         }
+      },
+      fontFamily: {
+        serif: ['Cinzel', 'Playfair Display', 'Georgia', 'serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', '-apple-system', 'sans-serif'],
       }
     },
   },

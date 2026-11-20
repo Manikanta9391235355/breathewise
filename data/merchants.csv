@@ -1,4 +1,0 @@
-merchant_id,name,business_type,timezone,currency,source
-M01,Ramesh Kirana,Kirana,Asia/Kolkata,INR,synthetic
-M02,Asha Tiffins,Food,Asia/Kolkata,INR,synthetic
-M03,Farah Stationery,Retail,Asia/Kolkata,INR,synthetic
