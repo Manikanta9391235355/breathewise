@@ -39,5 +39,6 @@ scratch/
 Thumbs.db
 .idea/
 .vscode/
+*.tsbuildinfo
 *.swp
 *.swo
