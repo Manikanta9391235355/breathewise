@@ -44,7 +44,8 @@ class AnswerGenerator:
 
     def is_configured(self) -> bool:
         """Verify whether an API key is present."""
-        return bool(self.api_key and len(self.api_key.strip()) > 10)
+        key = (self.api_key or os.getenv("OPENROUTER_API_KEY", "")).strip()
+        return bool(key and len(key) > 10)
 
     def format_context(self, chunks: list[dict[str, Any]]) -> str:
         """Format retrieved chunks into clean numbered context blocks."""
@@ -172,8 +173,9 @@ class AnswerGenerator:
 
         messages.append({"role": "user", "content": user_content})
 
+        active_key = (self.api_key or os.getenv("OPENROUTER_API_KEY", "")).strip()
         headers = {
-            "Authorization": f"Bearer {self.api_key.strip()}",
+            "Authorization": f"Bearer {active_key}",
             "Content-Type": "application/json",
             "HTTP-Referer": "https://estateiq.ai",
             "X-Title": "EstateIQ AI Real Estate Assistant",
