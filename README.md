@@ -4,11 +4,16 @@
 > **"Know what the air is doing. Know what to do next."**  
 > Developed for **PromptWars Virtual Challenge 06: Urban Air Quality Assistant**.
 
+[![Live Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Production-000000?style=for-the-badge&logo=vercel)](https://breathewise-amber.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Manikanta9391235355/breathewise)
 [![Next.js 14](https://img.shields.io/badge/Next.js-14.2-000000?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 [![Gemini API](https://img.shields.io/badge/Google_Gemini-2.5_Flash-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev)
 [![Open-Meteo](https://img.shields.io/badge/Open--Meteo-Air_Quality_&_Weather-4CAF50?style=for-the-badge)](https://open-meteo.com)
+
+**Live Production URL:** [https://breathewise-amber.vercel.app](https://breathewise-amber.vercel.app)  
+**Official GitHub Repository:** [https://github.com/Manikanta9391235355/breathewise](https://github.com/Manikanta9391235355/breathewise)
 
 ---
 
