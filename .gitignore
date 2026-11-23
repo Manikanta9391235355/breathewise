@@ -41,3 +41,5 @@ next-env.d.ts
 
 # legacy archive
 _archive_estateiq/
+
+.vercel
