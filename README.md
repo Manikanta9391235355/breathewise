@@ -13,7 +13,8 @@
 [![Open-Meteo](https://img.shields.io/badge/Open--Meteo-Air_Quality_&_Weather-4CAF50?style=for-the-badge)](https://open-meteo.com)
 
 **Live Production URL:** [https://breathewise-amber.vercel.app](https://breathewise-amber.vercel.app)  
-**Official GitHub Repository:** [https://github.com/Manikanta9391235355/breathewise](https://github.com/Manikanta9391235355/breathewise)
+**Official GitHub Repository:** [https://github.com/Manikanta9391235355/breathewise](https://github.com/Manikanta9391235355/breathewise)  
+**High-Definition Demo Video (720p HD):** [https://breathewise-amber.vercel.app/breathewise-demo.webm](https://breathewise-amber.vercel.app/breathewise-demo.webm)
 
 ---
 
