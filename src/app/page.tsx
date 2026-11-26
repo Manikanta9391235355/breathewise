@@ -15,6 +15,7 @@ import { AskBreatheWise } from '@/components/AskBreatheWise';
 import { CommunityMode } from '@/components/CommunityMode';
 import { NotificationCenter } from '@/components/NotificationCenter';
 import { SettingsModal } from '@/components/SettingsModal';
+import { DemoVideoModal } from '@/components/DemoVideoModal';
 
 import { AirQualityData, DailyRecommendation, NotificationItem, UserProfile } from '@/lib/types';
 import { DEFAULT_USER_PROFILE, DEMO_AIR_QUALITY, SAMPLE_RECOMMENDATIONS } from '@/lib/constants';
@@ -44,6 +45,7 @@ export default function BreatheWiseApp() {
   const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false);
+  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false);
 
   // Loading states
   const [isLoadingAir, setIsLoadingAir] = useState(false);
@@ -210,6 +212,7 @@ export default function BreatheWiseApp() {
         onOpenLocation={() => setIsOnboardingOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
         onOpenNotifications={() => setIsNotificationsOpen(true)}
+        onOpenDemoVideo={() => setIsDemoVideoOpen(true)}
         unreadCount={unreadCount}
         profile={profile}
         aqiValue={airQuality.aqi}
@@ -227,6 +230,7 @@ export default function BreatheWiseApp() {
               onExplorePlan={() => setCurrentTab('routine')}
               onCheckAir={() => setCurrentTab('today')}
               onOpenOnboarding={() => setIsOnboardingOpen(true)}
+              onOpenDemoVideo={() => setIsDemoVideoOpen(true)}
             />
 
             {/* Quick Teaser of the Air Intelligence Dashboard */}
@@ -393,6 +397,11 @@ export default function BreatheWiseApp() {
         notifications={notifications}
         onMarkAsRead={handleMarkNotificationAsRead}
         onMarkAllAsRead={handleMarkAllNotificationsAsRead}
+      />
+
+      <DemoVideoModal
+        isOpen={isDemoVideoOpen}
+        onClose={() => setIsDemoVideoOpen(false)}
       />
     </div>
   );
