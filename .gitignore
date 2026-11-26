@@ -44,3 +44,7 @@ _archive_estateiq/
 
 .vercel
 .env*
+
+# Temporary demo video generation artifacts
+public/demo-video/
+breathewise-demo.webm

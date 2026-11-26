@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Sparkles, ArrowRight, ShieldCheck, Wind, HeartPulse, Clock, ChevronDown, CheckCircle2, PlayCircle } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck, Wind, HeartPulse, Clock, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { AirQualityData, UserProfile } from '@/lib/types';
 
 interface LandingHeroProps {
@@ -10,7 +10,6 @@ interface LandingHeroProps {
   onExplorePlan: () => void;
   onCheckAir: () => void;
   onOpenOnboarding: () => void;
-  onOpenDemoVideo?: () => void;
 }
 
 export const LandingHero: React.FC<LandingHeroProps> = ({
@@ -18,8 +17,7 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
   profile,
   onExplorePlan,
   onCheckAir,
-  onOpenOnboarding,
-  onOpenDemoVideo
+  onOpenOnboarding
 }) => {
   return (
     <section className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -79,16 +77,6 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
                 >
                   EXPLORE YOUR DAILY PLAN
                 </button>
-
-                {onOpenDemoVideo && (
-                  <button
-                    onClick={onOpenDemoVideo}
-                    className="bg-forest/15 hover:bg-forest/25 text-forest border border-forest/25 px-5 sm:px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold tracking-utility uppercase shadow-sm transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-1.5"
-                  >
-                    <PlayCircle className="w-4 h-4 text-forest" />
-                    <span>WATCH DEMO (2 MIN)</span>
-                  </button>
-                )}
               </div>
             </div>
 

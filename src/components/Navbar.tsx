@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Wind, Bell, Sliders, MapPin, Sparkles, Home, Shield, Activity, Users, MessageSquare, PlayCircle } from 'lucide-react';
+import { Wind, Bell, Sliders, MapPin, Sparkles, Home, Shield, Activity, Users, MessageSquare } from 'lucide-react';
 import { UserProfile, NotificationItem } from '@/lib/types';
 
 interface NavbarProps {
@@ -10,7 +10,6 @@ interface NavbarProps {
   onOpenLocation: () => void;
   onOpenSettings: () => void;
   onOpenNotifications: () => void;
-  onOpenDemoVideo?: () => void;
   unreadCount: number;
   profile: UserProfile;
   aqiValue?: number;
@@ -23,7 +22,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenLocation,
   onOpenSettings,
   onOpenNotifications,
-  onOpenDemoVideo,
   unreadCount,
   profile,
   aqiValue,
@@ -120,18 +118,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <Sliders className="w-4 h-4" />
               </button>
-
-              {/* Demo Video Button */}
-              {onOpenDemoVideo && (
-                <button
-                  onClick={onOpenDemoVideo}
-                  className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-forest/10 hover:bg-forest/20 text-forest text-xs font-semibold tracking-utility uppercase transition-all"
-                  title="Watch 720p HD Product Demo Video"
-                >
-                  <PlayCircle className="w-3.5 h-3.5 text-forest" />
-                  <span>DEMO VIDEO</span>
-                </button>
-              )}
 
               {/* Primary CTA */}
               <button
